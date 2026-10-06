@@ -1,0 +1,6 @@
+node_modules/
+.loop-context/
+.loop-sandbox/
+.env
+.env.*
+.DS_Store

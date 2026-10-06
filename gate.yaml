@@ -1,0 +1,12 @@
+version: 1
+denylist:
+  - "**/.env"
+  - "**/.env.*"
+  - "**/secrets/**"
+  - "**/auth/**"
+  - ".github/**"
+  - "package*.json"
+  - "tests/**"
+maxFiles: 5
+autoMergeAllowlist:
+  - "src/*.mjs"

@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "scripts": {
     "test": "node --test tests/*.test.mjs",
-    "lint": "node --check scripts/check.mjs && node --check scripts/sync.mjs && node --check src/money.mjs",
+    "lint": "node scripts/lint.mjs",
     "loop:doctor": "loop doctor .",
     "loop:audit": "loop-audit . --suggest",
     "loop:sync": "node scripts/sync.mjs",

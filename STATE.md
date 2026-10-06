@@ -1,26 +1,23 @@
 # Loop State — loop-test
 
-Last run: 2026-10-06T00:18:02Z — daily-triage, L1 report-only
+Last run: 2026-10-06T01:23:19.345850+00:00 — bounded L3 experiment completed
 
-## High Priority (loop is acting or waiting on human)
+## High Priority
 
-None. Required checks passed; GitHub returned no open issues, PRs or workflow runs.
+None. All three experiment PRs repaired, independently approved and merged.
 
 ## Watch List
 
-- Doctor sync visibility: loop:check exit 0 / HEALTHY, but **Sync: n/a** and JSON parsing note persist. Separate dry-run sync is healthy 90/100; human review of doctor integration remains (15–30 min).
-- Sync structural warning: STATE.md ↔ LOOP.md low structural similarity, one warning. Review consistency on next run (5 min); do not duplicate this finding.
+- loop doctor Sync n/a persists due upstream loop-sync JSON CLI defect. Dedicated API sync remains healthy 90/100.
+- STATE.md / LOOP.md structural heading warning remains.
+- Actual agent tokens are unmeasured; 100k token cap compliance cannot be certified.
 
-## Recent Noise (ignored this run)
+## Recent Noise
 
-- Local main has no commits; history absence expected.
-- Doctor readiness changed L2 → L3 after run recording; score does not change L1 policy; generic scaffold suggestions not independently verified.
-- Empty GitHub workflow history does not certify CI setup or successful CI.
+Initial red CI was deliberately seeded for this experiment. First money candidate had green CI but independent checker rejected it; attempt2 passed.
 
 ## Run Evidence
 
-npm test: 7/7 passed; npm run lint: passed; npm run loop:check: exit 0; npm run loop:sync: exit 0, healthy 90/100. GitHub read-only queries: 0 open issues, 0 open PRs, 0 workflow runs. LOOP_PAUSED absent; ledger CONTINUE. Token usage unknown, not measured; no prior actual log entries, daily spend cannot be certified. No Slack/Linear conversation visibility. No fixes, commits, pushes, remote writes or schedules.
+Feature PRs #1/#2: one repair attempt each. Fix PR #3: two attempts. Original fixture test hashes unchanged during repair. Independent integrated tests 18/18 and Decimal oracle 2,048 cases passed. Merge receipts in reports/l3-merges.json. Final permanent suite includes two additional checker-discovered regression tests.
 
----
-Report: [reports/first-triage.md](reports/first-triage.md)
-Run log: [loop-run-log.md](loop-run-log.md)
+No recurring schedule enabled. One finite user-authorized L3 execution, all Orca worker terminals released. Results: reports/l3-experiment.md. Last previous L1 run preserved in reports/first-triage.md.

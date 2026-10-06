@@ -1,0 +1,148 @@
+verify	Run npm test	﻿2026-10-06T01:12:26.7215991Z ##[group]Run npm test
+verify	Run npm test	2026-10-06T01:12:26.7216607Z [36;1mnpm test[0m
+verify	Run npm test	2026-10-06T01:12:26.7269073Z shell: /usr/bin/bash -e {0}
+verify	Run npm test	2026-10-06T01:12:26.7269700Z ##[endgroup]
+verify	Run npm test	2026-10-06T01:12:26.8113559Z 
+verify	Run npm test	2026-10-06T01:12:26.8114598Z > loop-engineer-test@1.0.0 test
+verify	Run npm test	2026-10-06T01:12:26.8115899Z > node --test tests/*.test.mjs
+verify	Run npm test	2026-10-06T01:12:26.8116421Z 
+verify	Run npm test	2026-10-06T01:12:26.8485779Z TAP version 13
+verify	Run npm test	2026-10-06T01:12:26.8744102Z # Subtest: money rounds ordinary values
+verify	Run npm test	2026-10-06T01:12:26.8754785Z ok 1 - money rounds ordinary values
+verify	Run npm test	2026-10-06T01:12:26.8756183Z   ---
+verify	Run npm test	2026-10-06T01:12:26.8757239Z   duration_ms: 0.595253
+verify	Run npm test	2026-10-06T01:12:26.8758307Z   type: 'test'
+verify	Run npm test	2026-10-06T01:12:26.8759235Z   ...
+verify	Run npm test	2026-10-06T01:12:26.8760238Z # Subtest: money rejects non-finite values
+verify	Run npm test	2026-10-06T01:12:26.8761553Z ok 2 - money rejects non-finite values
+verify	Run npm test	2026-10-06T01:12:26.8762698Z   ---
+verify	Run npm test	2026-10-06T01:12:26.8763640Z   duration_ms: 0.293831
+verify	Run npm test	2026-10-06T01:12:26.8764780Z   type: 'test'
+verify	Run npm test	2026-10-06T01:12:26.8765692Z   ...
+verify	Run npm test	2026-10-06T01:12:27.2792855Z # Subtest: fresh ledger permits a report-only run
+verify	Run npm test	2026-10-06T01:12:27.2793638Z ok 3 - fresh ledger permits a report-only run
+verify	Run npm test	2026-10-06T01:12:27.2793998Z   ---
+verify	Run npm test	2026-10-06T01:12:27.2794278Z   duration_ms: 28.576743
+verify	Run npm test	2026-10-06T01:12:27.2794561Z   type: 'test'
+verify	Run npm test	2026-10-06T01:12:27.2794933Z   ...
+verify	Run npm test	2026-10-06T01:12:27.2795241Z # Subtest: repeated failure trips circuit breaker
+verify	Run npm test	2026-10-06T01:12:27.2799273Z ok 4 - repeated failure trips circuit breaker
+verify	Run npm test	2026-10-06T01:12:27.2799634Z   ---
+verify	Run npm test	2026-10-06T01:12:27.2799847Z   duration_ms: 25.941674
+verify	Run npm test	2026-10-06T01:12:27.2800071Z   type: 'test'
+verify	Run npm test	2026-10-06T01:12:27.2800255Z   ...
+verify	Run npm test	2026-10-06T01:12:27.2800509Z # Subtest: token cap trips circuit breaker
+verify	Run npm test	2026-10-06T01:12:27.2800848Z ok 5 - token cap trips circuit breaker
+verify	Run npm test	2026-10-06T01:12:27.2801115Z   ---
+verify	Run npm test	2026-10-06T01:12:27.2801310Z   duration_ms: 28.064003
+verify	Run npm test	2026-10-06T01:12:27.2802033Z   type: 'test'
+verify	Run npm test	2026-10-06T01:12:27.2802223Z   ...
+verify	Run npm test	2026-10-06T01:12:27.2805681Z # Subtest: sensitive paths require escalation
+verify	Run npm test	2026-10-06T01:12:27.2806164Z ok 6 - sensitive paths require escalation
+verify	Run npm test	2026-10-06T01:12:27.2806516Z   ---
+verify	Run npm test	2026-10-06T01:12:27.2806722Z   duration_ms: 85.673363
+verify	Run npm test	2026-10-06T01:12:27.2806962Z   type: 'test'
+verify	Run npm test	2026-10-06T01:12:27.2807199Z   ...
+verify	Run npm test	2026-10-06T01:12:27.2807509Z # Subtest: L3 policy prevents documentation auto-merge
+verify	Run npm test	2026-10-06T01:12:27.2807982Z ok 7 - L3 policy prevents documentation auto-merge
+verify	Run npm test	2026-10-06T01:12:27.2815025Z   ---
+verify	Run npm test	2026-10-06T01:12:27.2819803Z   duration_ms: 60.420737
+verify	Run npm test	2026-10-06T01:12:27.2820017Z   type: 'test'
+verify	Run npm test	2026-10-06T01:12:27.2820258Z   ...
+verify	Run npm test	2026-10-06T01:12:27.2820715Z # Subtest: non-sensitive changes can be reviewed for a manual commit
+verify	Run npm test	2026-10-06T01:12:27.2821174Z ok 8 - non-sensitive changes can be reviewed for a manual commit
+verify	Run npm test	2026-10-06T01:12:27.2821464Z   ---
+verify	Run npm test	2026-10-06T01:12:27.2821655Z   duration_ms: 53.045247
+verify	Run npm test	2026-10-06T01:12:27.2821917Z   type: 'test'
+verify	Run npm test	2026-10-06T01:12:27.2822162Z   ...
+verify	Run npm test	2026-10-06T01:12:27.2822448Z # Subtest: kill switch stops before invoking any tools
+verify	Run npm test	2026-10-06T01:12:27.2822707Z ok 9 - kill switch stops before invoking any tools
+verify	Run npm test	2026-10-06T01:12:27.2822950Z   ---
+verify	Run npm test	2026-10-06T01:12:27.2823142Z   duration_ms: 23.674428
+verify	Run npm test	2026-10-06T01:12:27.2823400Z   type: 'test'
+verify	Run npm test	2026-10-06T01:12:27.2823588Z   ...
+verify	Run npm test	2026-10-06T01:12:27.2823878Z # Subtest: L3 allows implementation repairs only
+verify	Run npm test	2026-10-06T01:12:27.2824127Z ok 10 - L3 allows implementation repairs only
+verify	Run npm test	2026-10-06T01:12:27.2824286Z   ---
+verify	Run npm test	2026-10-06T01:12:27.2824402Z   duration_ms: 50.635074
+verify	Run npm test	2026-10-06T01:12:27.2824538Z   type: 'test'
+verify	Run npm test	2026-10-06T01:12:27.2824807Z   ...
+verify	Run npm test	2026-10-06T01:12:27.2825132Z # Subtest: L3 rejects test changes
+verify	Run npm test	2026-10-06T01:12:27.2825411Z ok 11 - L3 rejects test changes
+verify	Run npm test	2026-10-06T01:12:27.2825625Z   ---
+verify	Run npm test	2026-10-06T01:12:27.2825783Z   duration_ms: 50.761086
+verify	Run npm test	2026-10-06T01:12:27.2826130Z   type: 'test'
+verify	Run npm test	2026-10-06T01:12:27.2826406Z   ...
+verify	Run npm test	2026-10-06T01:12:27.2882401Z # Subtest: statistics calculates count total and average
+verify	Run npm test	2026-10-06T01:12:27.2882793Z ok 12 - statistics calculates count total and average
+verify	Run npm test	2026-10-06T01:12:27.2883364Z   ---
+verify	Run npm test	2026-10-06T01:12:27.2883481Z   duration_ms: 1.075363
+verify	Run npm test	2026-10-06T01:12:27.2883617Z   type: 'test'
+verify	Run npm test	2026-10-06T01:12:27.2883735Z   ...
+verify	Run npm test	2026-10-06T01:12:27.2883888Z # Subtest: statistics handles empty input
+verify	Run npm test	2026-10-06T01:12:27.2885923Z not ok 13 - statistics handles empty input
+verify	Run npm test	2026-10-06T01:12:27.2886167Z   ---
+verify	Run npm test	2026-10-06T01:12:27.2886356Z   duration_ms: 1.035524
+verify	Run npm test	2026-10-06T01:12:27.2886555Z   type: 'test'
+verify	Run npm test	2026-10-06T01:12:27.2886959Z   location: '/home/runner/work/loop-test/loop-test/tests/statistics.test.mjs:5:1'
+verify	Run npm test	2026-10-06T01:12:27.2887431Z   failureType: 'testCodeFailure'
+verify	Run npm test	2026-10-06T01:12:27.2887694Z   error: |-
+verify	Run npm test	2026-10-06T01:12:27.2887938Z     Expected values to be strictly deep-equal:
+verify	Run npm test	2026-10-06T01:12:27.2888218Z     + actual - expected
+verify	Run npm test	2026-10-06T01:12:27.2888415Z     
+verify	Run npm test	2026-10-06T01:12:27.2888587Z       {
+verify	Run npm test	2026-10-06T01:12:27.2888767Z     +   average: NaN,
+verify	Run npm test	2026-10-06T01:12:27.2888981Z     -   average: 0,
+verify	Run npm test	2026-10-06T01:12:27.2889174Z         count: 0,
+verify	Run npm test	2026-10-06T01:12:27.2889296Z         total: 0
+verify	Run npm test	2026-10-06T01:12:27.2889420Z       }
+verify	Run npm test	2026-10-06T01:12:27.2889528Z     
+verify	Run npm test	2026-10-06T01:12:27.2889644Z   code: 'ERR_ASSERTION'
+verify	Run npm test	2026-10-06T01:12:27.2889782Z   name: 'AssertionError'
+verify	Run npm test	2026-10-06T01:12:27.2889931Z   expected:
+verify	Run npm test	2026-10-06T01:12:27.2890046Z     count: 0
+verify	Run npm test	2026-10-06T01:12:27.2890162Z     total: 0
+verify	Run npm test	2026-10-06T01:12:27.2890277Z     average: 0
+verify	Run npm test	2026-10-06T01:12:27.2890394Z   actual:
+verify	Run npm test	2026-10-06T01:12:27.2890504Z     count: 0
+verify	Run npm test	2026-10-06T01:12:27.2890614Z     total: 0
+verify	Run npm test	2026-10-06T01:12:27.2896840Z     average: NaN
+verify	Run npm test	2026-10-06T01:12:27.2897065Z   operator: 'deepStrictEqual'
+verify	Run npm test	2026-10-06T01:12:27.2897656Z   stack: |-
+verify	Run npm test	2026-10-06T01:12:27.2898225Z     TestContext.<anonymous> (file:///home/runner/work/loop-test/loop-test/tests/statistics.test.mjs:5:53)
+verify	Run npm test	2026-10-06T01:12:27.2898788Z     Test.runInAsyncScope (node:async_hooks:214:14)
+verify	Run npm test	2026-10-06T01:12:27.2899154Z     Test.run (node:internal/test_runner/test:1047:25)
+verify	Run npm test	2026-10-06T01:12:27.2899884Z     Test.processPendingSubtests (node:internal/test_runner/test:744:18)
+verify	Run npm test	2026-10-06T01:12:27.2900355Z     Test.postRun (node:internal/test_runner/test:1173:19)
+verify	Run npm test	2026-10-06T01:12:27.2900730Z     Test.run (node:internal/test_runner/test:1101:12)
+verify	Run npm test	2026-10-06T01:12:27.2901206Z     async startSubtestAfterBootstrap (node:internal/test_runner/harness:296:3)
+verify	Run npm test	2026-10-06T01:12:27.2901581Z   ...
+verify	Run npm test	2026-10-06T01:12:27.2901863Z # Subtest: statistics rejects non-finite values
+verify	Run npm test	2026-10-06T01:12:27.2902266Z not ok 14 - statistics rejects non-finite values
+verify	Run npm test	2026-10-06T01:12:27.2902572Z   ---
+verify	Run npm test	2026-10-06T01:12:27.2902780Z   duration_ms: 0.282114
+verify	Run npm test	2026-10-06T01:12:27.2902992Z   type: 'test'
+verify	Run npm test	2026-10-06T01:12:27.2903425Z   location: '/home/runner/work/loop-test/loop-test/tests/statistics.test.mjs:6:1'
+verify	Run npm test	2026-10-06T01:12:27.2903876Z   failureType: 'testCodeFailure'
+verify	Run npm test	2026-10-06T01:12:27.2904227Z   error: 'Missing expected exception (TypeError).'
+verify	Run npm test	2026-10-06T01:12:27.2904561Z   code: 'ERR_ASSERTION'
+verify	Run npm test	2026-10-06T01:12:27.2904930Z   name: 'AssertionError'
+verify	Run npm test	2026-10-06T01:12:27.2905140Z   stack: |-
+verify	Run npm test	2026-10-06T01:12:27.2905616Z     TestContext.<anonymous> (file:///home/runner/work/loop-test/loop-test/tests/statistics.test.mjs:6:59)
+verify	Run npm test	2026-10-06T01:12:27.2906144Z     Test.runInAsyncScope (node:async_hooks:214:14)
+verify	Run npm test	2026-10-06T01:12:27.2906534Z     Test.run (node:internal/test_runner/test:1047:25)
+verify	Run npm test	2026-10-06T01:12:27.2906989Z     Test.processPendingSubtests (node:internal/test_runner/test:744:18)
+verify	Run npm test	2026-10-06T01:12:27.2907429Z     Test.postRun (node:internal/test_runner/test:1173:19)
+verify	Run npm test	2026-10-06T01:12:27.2907806Z     Test.run (node:internal/test_runner/test:1101:12)
+verify	Run npm test	2026-10-06T01:12:27.2908252Z     async Test.processPendingSubtests (node:internal/test_runner/test:744:7)
+verify	Run npm test	2026-10-06T01:12:27.2908596Z   ...
+verify	Run npm test	2026-10-06T01:12:27.2908790Z 1..14
+verify	Run npm test	2026-10-06T01:12:27.2908958Z # tests 14
+verify	Run npm test	2026-10-06T01:12:27.2909126Z # suites 0
+verify	Run npm test	2026-10-06T01:12:27.2909294Z # pass 12
+verify	Run npm test	2026-10-06T01:12:27.2909474Z # fail 2
+verify	Run npm test	2026-10-06T01:12:27.2909653Z # cancelled 0
+verify	Run npm test	2026-10-06T01:12:27.2909835Z # skipped 0
+verify	Run npm test	2026-10-06T01:12:27.2909963Z # todo 0
+verify	Run npm test	2026-10-06T01:12:27.2910260Z # duration_ms 452.082172
+verify	Run npm test	2026-10-06T01:12:27.2998448Z ##[error]Process completed with exit code 1.

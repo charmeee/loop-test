@@ -1,0 +1,58 @@
+[
+  {
+    "conclusion": "failure",
+    "databaseId": 37397980906,
+    "headBranch": "fix/money-rounding",
+    "headSha": "5864210ef0201985d44594338efbfcc1f1c21a4f",
+    "status": "completed",
+    "url": "https://github.com/charmeee/loop-test/actions/runs/37397980906"
+  },
+  {
+    "conclusion": "failure",
+    "databaseId": 37397975936,
+    "headBranch": "fix/money-rounding",
+    "headSha": "5864210ef0201985d44594338efbfcc1f1c21a4f",
+    "status": "completed",
+    "url": "https://github.com/charmeee/loop-test/actions/runs/37397975936"
+  },
+  {
+    "conclusion": "failure",
+    "databaseId": 37397975389,
+    "headBranch": "feature/statistics",
+    "headSha": "99c9931b5b2fbbd0885af8d40bdadc5dd3d4d5f0",
+    "status": "completed",
+    "url": "https://github.com/charmeee/loop-test/actions/runs/37397975389"
+  },
+  {
+    "conclusion": "failure",
+    "databaseId": 37397970757,
+    "headBranch": "feature/statistics",
+    "headSha": "99c9931b5b2fbbd0885af8d40bdadc5dd3d4d5f0",
+    "status": "completed",
+    "url": "https://github.com/charmeee/loop-test/actions/runs/37397970757"
+  },
+  {
+    "conclusion": "failure",
+    "databaseId": 37397969753,
+    "headBranch": "feature/discount",
+    "headSha": "e8ddb0245bce6866cc0a5929bbc50bd3a2e6936e",
+    "status": "completed",
+    "url": "https://github.com/charmeee/loop-test/actions/runs/37397969753"
+  },
+  {
+    "conclusion": "failure",
+    "databaseId": 37397964564,
+    "headBranch": "feature/discount",
+    "headSha": "e8ddb0245bce6866cc0a5929bbc50bd3a2e6936e",
+    "status": "completed",
+    "url": "https://github.com/charmeee/loop-test/actions/runs/37397964564"
+  },
+  {
+    "conclusion": "success",
+    "databaseId": 37397953249,
+    "headBranch": "main",
+    "headSha": "1c1dd24767af399a64bfd14237ad6977cb3e0058",
+    "status": "completed",
+    "url": "https://github.com/charmeee/loop-test/actions/runs/37397953249"
+  }
+]

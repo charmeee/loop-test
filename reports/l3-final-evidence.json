@@ -1,0 +1,663 @@
+{
+  "1": {
+    "sha": "5603b1ffce470d52d16f4bdfa7d6d0610871d50e",
+    "head": {
+      "args": [
+        "git",
+        "rev-parse",
+        "HEAD"
+      ],
+      "code": 0,
+      "stdout": "5603b1ffce470d52d16f4bdfa7d6d0610871d50e\n",
+      "stderr": ""
+    },
+    "status": {
+      "args": [
+        "git",
+        "status",
+        "--porcelain"
+      ],
+      "code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    "remote": {
+      "args": [
+        "git",
+        "ls-remote",
+        "origin",
+        "refs/heads/feature/discount"
+      ],
+      "code": 0,
+      "stdout": "5603b1ffce470d52d16f4bdfa7d6d0610871d50e\trefs/heads/feature/discount\n",
+      "stderr": ""
+    },
+    "diff": {
+      "args": [
+        "git",
+        "diff",
+        "--name-only",
+        "e8ddb0245bce6866cc0a5929bbc50bd3a2e6936e",
+        "5603b1ffce470d52d16f4bdfa7d6d0610871d50e"
+      ],
+      "code": 0,
+      "stdout": "src/discount.mjs\n",
+      "stderr": ""
+    },
+    "diffCheck": {
+      "args": [
+        "git",
+        "diff",
+        "--check",
+        "e8ddb0245bce6866cc0a5929bbc50bd3a2e6936e",
+        "5603b1ffce470d52d16f4bdfa7d6d0610871d50e"
+      ],
+      "code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    "pr": {
+      "args": [
+        "gh",
+        "api",
+        "repos/charmeee/loop-test/pulls/1"
+      ],
+      "code": 0,
+      "stdout": "{\"url\":\"https://api.github.com/repos/charmeee/loop-test/pulls/1\",\"id\":4752796576,\"node_id\":\"PR_kwDOU9WZbc8AAAABG0nroA\",\"html_url\":\"https://github.com/charmeee/loop-test/pull/1\",\"diff_url\":\"https://github.com/charmeee/loop-test/pull/1.diff\",\"patch_url\":\"https://github.com/charmeee/loop-test/pull/1.patch\",\"issue_url\":\"https://api.github.com/repos/charmeee/loop-test/issues/1\",\"number\":1,\"state\":\"open\",\"locked\":false,\"title\":\"feat: \ud560\uc778 \uacc4\uc0b0 \uae30\ub2a5 \ucd94\uac00\",\"user\":{\"login\":\"charmeee\",\"id\":75278669,\"node_id\":\"MDQ6VXNlcjc1Mjc4NjY5\",\"avatar_url\":\"https://avatars.githubusercontent.com/u/75278669?v=4\",\"gravatar_id\":\"\",\"url\":\"https://api.github.com/users/charmeee\",\"html_url\":\"https://github.com/charmeee\",\"followers_url\":\"https://api.github.com/users/charmeee/followers\",\"following_url\":\"https://api.github.com/users/charmeee/following{/other_user}\",\"gists_url\":\"https://api.github.com/users/charmeee/gists{/gist_id}\",\"starred_url\":\"https://api.github.com/users/charmeee/starred{/owner}{/repo}\",\"subscriptions_url\":\"https://api.github.com/users/charmeee/subscriptions\",\"organizations_url\":\"https://api.github.com/users/charmeee/orgs\",\"repos_url\":\"https://api.github.com/users/charmeee/repos\",\"events_url\":\"https://api.github.com/users/charmeee/events{/privacy}\",\"received_events_url\":\"https://api.github.com/users/charmeee/received_events\",\"type\":\"User\",\"user_view_type\":\"public\",\"site_admin\":false},\"body\":\"\ud560\uc778\uc728\uc744 \uc801\uc6a9\ud55c \uacac\uc801 \ucd1d\uc561\uc744 \uacc4\uc0b0\ud569\ub2c8\ub2e4. \uc74c\uc218 \uae08\uc561, \ube44\uc720\ud55c \uac12, 0~100 \ubc94\uc704\ub97c \ubc97\uc5b4\ub09c \ud560\uc778\uc728\uc740 RangeError\ub85c \uac70\ubd80\ud569\ub2c8\ub2e4.\\n\\n\uac80\uc99d: GitHub Actions\uc640 \ub85c\uceec \ud14c\uc2a4\ud2b8 14\uac1c \ud1b5\uacfc. \uae30\uc874 \ud68c\uadc0 \ud14c\uc2a4\ud2b8\ub97c \uc720\uc9c0\ud558\uace0 src/discount.mjs\ub9cc \uc218\uc815\ud588\uc2b5\ub2c8\ub2e4. \ubcc4\ub3c4 checker\uac00 \uc815\ud655\ud55c \ucee4\ubc0b\uc744 \uac80\uc99d\ud55c \ub4a4 L3 \uac8c\uc774\ud2b8\uac00 \uba38\uc9c0\ud569\ub2c8\ub2e4.\\n\",\"created_at\":\"2026-10-06T01:12:16Z\",\"updated_at\":\"2026-10-06T01:15:55Z\",\"closed_at\":null,\"merged_at\":null,\"merge_commit_sha\":\"98aa580aad41fdf7796211b4e927dd62d86eb36a\",\"assignees\":[],\"requested_reviewers\":[],\"requested_teams\":[],\"labels\":[],\"milestone\":null,\"draft\":false,\"commits_url\":\"https://api.github.com/repos/charmeee/loop-test/pulls/1/commits\",\"review_comments_url\":\"https://api.github.com/repos/charmeee/loop-test/pulls/1/comments\",\"review_comment_url\":\"https://api.github.com/repos/charmeee/loop-test/pulls/comments{/number}\",\"comments_url\":\"https://api.github.com/repos/charmeee/loop-test/issues/1/comments\",\"statuses_url\":\"https://api.github.com/repos/charmeee/loop-test/statuses/5603b1ffce470d52d16f4bdfa7d6d0610871d50e\",\"head\":{\"label\":\"charmeee:feature/discount\",\"ref\":\"feature/discount\",\"sha\":\"5603b1ffce470d52d16f4bdfa7d6d0610871d50e\",\"user\":{\"login\":\"charmeee\",\"id\":75278669,\"node_id\":\"MDQ6VXNlcjc1Mjc4NjY5\",\"avatar_url\":\"https://avatars.githubusercontent.com/u/75278669?v=4\",\"gravatar_id\":\"\",\"url\":\"https://api.github.com/users/charmeee\",\"html_url\":\"https://github.com/charmeee\",\"followers_url\":\"https://api.github.com/users/charmeee/followers\",\"following_url\":\"https://api.github.com/users/charmeee/following{/other_user}\",\"gists_url\":\"https://api.github.com/users/charmeee/gists{/gist_id}\",\"starred_url\":\"https://api.github.com/users/charmeee/starred{/owner}{/repo}\",\"subscriptions_url\":\"https://api.github.com/users/charmeee/subscriptions\",\"organizations_url\":\"https://api.github.com/users/charmeee/orgs\",\"repos_url\":\"https://api.github.com/users/charmeee/repos\",\"events_url\":\"https://api.github.com/users/charmeee/events{/privacy}\",\"received_events_url\":\"https://api.github.com/users/charmeee/received_events\",\"type\":\"User\",\"user_view_type\":\"public\",\"site_admin\":false},\"repo\":{\"id\":1406507373,\"node_id\":\"R_kgDOU9WZbQ\",\"name\":\"loop-test\",\"full_name\":\"charmeee/loop-test\",\"private\":false,\"owner\":{\"login\":\"charmeee\",\"id\":75278669,\"node_id\":\"MDQ6VXNlcjc1Mjc4NjY5\",\"avatar_url\":\"https://avatars.githubusercontent.com/u/75278669?v=4\",\"gravatar_id\":\"\",\"url\":\"https://api.github.com/users/charmeee\",\"html_url\":\"https://github.com/charmeee\",\"followers_url\":\"https://api.github.com/users/charmeee/followers\",\"following_url\":\"https://api.github.com/users/charmeee/following{/other_user}\",\"gists_url\":\"https://api.github.com/users/charmeee/gists{/gist_id}\",\"starred_url\":\"https://api.github.com/users/charmeee/starred{/owner}{/repo}\",\"subscriptions_url\":\"https://api.github.com/users/charmeee/subscriptions\",\"organizations_url\":\"https://api.github.com/users/charmeee/orgs\",\"repos_url\":\"https://api.github.com/users/charmeee/repos\",\"events_url\":\"https://api.github.com/users/charmeee/events{/privacy}\",\"received_events_url\":\"https://api.github.com/users/charmeee/received_events\",\"type\":\"User\",\"user_view_type\":\"public\",\"site_admin\":false},\"html_url\":\"https://github.com/charmeee/loop-test\",\"description\":null,\"fork\":false,\"url\":\"https://api.github.com/repos/charmeee/loop-test\",\"forks_url\":\"https://api.github.com/repos/charmeee/loop-test/forks\",\"keys_url\":\"https://api.github.com/repos/charmeee/loop-test/keys{/key_id}\",\"collaborators_url\":\"https://api.github.com/repos/charmeee/loop-test/collaborators{/collaborator}\",\"teams_url\":\"https://api.github.com/repos/charmeee/loop-test/teams\",\"hooks_url\":\"https://api.github.com/repos/charmeee/loop-test/hooks\",\"issue_events_url\":\"https://api.github.com/repos/charmeee/loop-test/issues/events{/number}\",\"events_url\":\"https://api.github.com/repos/charmeee/loop-test/events\",\"assignees_url\":\"https://api.github.com/repos/charmeee/loop-test/assignees{/user}\",\"branches_url\":\"https://api.github.com/repos/charmeee/loop-test/branches{/branch}\",\"tags_url\":\"https://api.github.com/repos/charmeee/loop-test/tags\",\"blobs_url\":\"https://api.github.com/repos/charmeee/loop-test/git/blobs{/sha}\",\"git_tags_url\":\"https://api.github.com/repos/charmeee/loop-test/git/tags{/sha}\",\"git_refs_url\":\"https://api.github.com/repos/charmeee/loop-test/git/refs{/sha}\",\"trees_url\":\"https://api.github.com/repos/charmeee/loop-test/git/trees{/sha}\",\"statuses_url\":\"https://api.github.com/repos/charmeee/loop-test/statuses/{sha}\",\"languages_url\":\"https://api.github.com/repos/charmeee/loop-test/languages\",\"stargazers_url\":\"https://api.github.com/repos/charmeee/loop-test/stargazers\",\"contributors_url\":\"https://api.github.com/repos/charmeee/loop-test/contributors\",\"subscribers_url\":\"https://api.github.com/repos/charmeee/loop-test/subscribers\",\"subscription_url\":\"https://api.github.com/repos/charmeee/loop-test/subscription\",\"commits_url\":\"https://api.github.com/repos/charmeee/loop-test/commits{/sha}\",\"git_commits_url\":\"https://api.github.com/repos/charmeee/loop-test/git/commits{/sha}\",\"comments_url\":\"https://api.github.com/repos/charmeee/loop-test/comments{/number}\",\"issue_comment_url\":\"https://api.github.com/repos/charmeee/loop-test/issues/comments{/number}\",\"contents_url\":\"https://api.github.com/repos/charmeee/loop-test/contents/{+path}\",\"compare_url\":\"https://api.github.com/repos/charmeee/loop-test/compare/{base}...{head}\",\"merges_url\":\"https://api.github.com/repos/charmeee/loop-test/merges\",\"archive_url\":\"https://api.github.com/repos/charmeee/loop-test/{archive_format}{/ref}\",\"downloads_url\":\"https://api.github.com/repos/charmeee/loop-test/downloads\",\"issues_url\":\"https://api.github.com/repos/charmeee/loop-test/issues{/number}\",\"pulls_url\":\"https://api.github.com/repos/charmeee/loop-test/pulls{/number}\",\"milestones_url\":\"https://api.github.com/repos/charmeee/loop-test/milestones{/number}\",\"notifications_url\":\"https://api.github.com/repos/charmeee/loop-test/notifications{?since,all,participating}\",\"labels_url\":\"https://api.github.com/repos/charmeee/loop-test/labels{/name}\",\"releases_url\":\"https://api.github.com/repos/charmeee/loop-test/releases{/id}\",\"deployments_url\":\"https://api.github.com/repos/charmeee/loop-test/deployments\",\"created_at\":\"2026-10-06T00:12:31Z\",\"updated_at\":\"2026-10-06T01:12:07Z\",\"pushed_at\":\"2026-10-06T01:18:54Z\",\"git_url\":\"git://github.com/charmeee/loop-test.git\",\"ssh_url\":\"git@github.com:charmeee/loop-test.git\",\"clone_url\":\"https://github.com/charmeee/loop-test.git\",\"svn_url\":\"https://github.com/charmeee/loop-test\",\"homepage\":null,\"size\":0,\"stargazers_count\":0,\"watchers_count\":0,\"language\":\"JavaScript\",\"has_issues\":true,\"has_projects\":true,\"has_downloads\":false,\"has_wiki\":true,\"has_pages\":false,\"has_discussions\":false,\"forks_count\":0,\"mirror_url\":null,\"archived\":false,\"disabled\":false,\"open_issues_count\":3,\"license\":null,\"allow_forking\":true,\"is_template\":false,\"web_commit_signoff_required\":false,\"has_pull_requests\":true,\"pull_request_creation_policy\":\"all\",\"topics\":[],\"visibility\":\"public\",\"forks\":0,\"open_issues\":3,\"watchers\":0,\"default_branch\":\"main\"}},\"base\":{\"label\":\"charmeee:main\",\"ref\":\"main\",\"sha\":\"1c1dd24767af399a64bfd14237ad6977cb3e0058\",\"user\":{\"login\":\"charmeee\",\"id\":75278669,\"node_id\":\"MDQ6VXNlcjc1Mjc4NjY5\",\"avatar_url\":\"https://avatars.githubusercontent.com/u/75278669?v=4\",\"gravatar_id\":\"\",\"url\":\"https://api.github.com/users/charmeee\",\"html_url\":\"https://github.com/charmeee\",\"followers_url\":\"https://api.github.com/users/charmeee/followers\",\"following_url\":\"https://api.github.com/users/charmeee/following{/other_user}\",\"gists_url\":\"https://api.github.com/users/charmeee/gists{/gist_id}\",\"starred_url\":\"https://api.github.com/users/charmeee/starred{/owner}{/repo}\",\"subscriptions_url\":\"https://api.github.com/users/charmeee/subscriptions\",\"organizations_url\":\"https://api.github.com/users/charmeee/orgs\",\"repos_url\":\"https://api.github.com/users/charmeee/repos\",\"events_url\":\"https://api.github.com/users/charmeee/events{/privacy}\",\"received_events_url\":\"https://api.github.com/users/charmeee/received_events\",\"type\":\"User\",\"user_view_type\":\"public\",\"site_admin\":false},\"repo\":{\"id\":1406507373,\"node_id\":\"R_kgDOU9WZbQ\",\"name\":\"loop-test\",\"full_name\":\"charmeee/loop-test\",\"private\":false,\"owner\":{\"login\":\"charmeee\",\"id\":75278669,\"node_id\":\"MDQ6VXNlcjc1Mjc4NjY5\",\"avatar_url\":\"https://avatars.githubusercontent.com/u/75278669?v=4\",\"gravatar_id\":\"\",\"url\":\"https://api.github.com/users/charmeee\",\"html_url\":\"https://github.com/charmeee\",\"followers_url\":\"https://api.github.com/users/charmeee/followers\",\"following_url\":\"https://api.github.com/users/charmeee/following{/other_user}\",\"gists_url\":\"https://api.github.com/users/charmeee/gists{/gist_id}\",\"starred_url\":\"https://api.github.com/users/charmeee/starred{/owner}{/repo}\",\"subscriptions_url\":\"https://api.github.com/users/charmeee/subscriptions\",\"organizations_url\":\"https://api.github.com/users/charmeee/orgs\",\"repos_url\":\"https://api.github.com/users/charmeee/repos\",\"events_url\":\"https://api.github.com/users/charmeee/events{/privacy}\",\"received_events_url\":\"https://api.github.com/users/charmeee/received_events\",\"type\":\"User\",\"user_view_type\":\"public\",\"site_admin\":false},\"html_url\":\"https://github.com/charmeee/loop-test\",\"description\":null,\"fork\":false,\"url\":\"https://api.github.com/repos/charmeee/loop-test\",\"forks_url\":\"https://api.github.com/repos/charmeee/loop-test/forks\",\"keys_url\":\"https://api.github.com/repos/charmeee/loop-test/keys{/key_id}\",\"collaborators_url\":\"https://api.github.com/repos/charmeee/loop-test/collaborators{/collaborator}\",\"teams_url\":\"https://api.github.com/repos/charmeee/loop-test/teams\",\"hooks_url\":\"https://api.github.com/repos/charmeee/loop-test/hooks\",\"issue_events_url\":\"https://api.github.com/repos/charmeee/loop-test/issues/events{/number}\",\"events_url\":\"https://api.github.com/repos/charmeee/loop-test/events\",\"assignees_url\":\"https://api.github.com/repos/charmeee/loop-test/assignees{/user}\",\"branches_url\":\"https://api.github.com/repos/charmeee/loop-test/branches{/branch}\",\"tags_url\":\"https://api.github.com/repos/charmeee/loop-test/tags\",\"blobs_url\":\"https://api.github.com/repos/charmeee/loop-test/git/blobs{/sha}\",\"git_tags_url\":\"https://api.github.com/repos/charmeee/loop-test/git/tags{/sha}\",\"git_refs_url\":\"https://api.github.com/repos/charmeee/loop-test/git/refs{/sha}\",\"trees_url\":\"https://api.github.com/repos/charmeee/loop-test/git/trees{/sha}\",\"statuses_url\":\"https://api.github.com/repos/charmeee/loop-test/statuses/{sha}\",\"languages_url\":\"https://api.github.com/repos/charmeee/loop-test/languages\",\"stargazers_url\":\"https://api.github.com/repos/charmeee/loop-test/stargazers\",\"contributors_url\":\"https://api.github.com/repos/charmeee/loop-test/contributors\",\"subscribers_url\":\"https://api.github.com/repos/charmeee/loop-test/subscribers\",\"subscription_url\":\"https://api.github.com/repos/charmeee/loop-test/subscription\",\"commits_url\":\"https://api.github.com/repos/charmeee/loop-test/commits{/sha}\",\"git_commits_url\":\"https://api.github.com/repos/charmeee/loop-test/git/commits{/sha}\",\"comments_url\":\"https://api.github.com/repos/charmeee/loop-test/comments{/number}\",\"issue_comment_url\":\"https://api.github.com/repos/charmeee/loop-test/issues/comments{/number}\",\"contents_url\":\"https://api.github.com/repos/charmeee/loop-test/contents/{+path}\",\"compare_url\":\"https://api.github.com/repos/charmeee/loop-test/compare/{base}...{head}\",\"merges_url\":\"https://api.github.com/repos/charmeee/loop-test/merges\",\"archive_url\":\"https://api.github.com/repos/charmeee/loop-test/{archive_format}{/ref}\",\"downloads_url\":\"https://api.github.com/repos/charmeee/loop-test/downloads\",\"issues_url\":\"https://api.github.com/repos/charmeee/loop-test/issues{/number}\",\"pulls_url\":\"https://api.github.com/repos/charmeee/loop-test/pulls{/number}\",\"milestones_url\":\"https://api.github.com/repos/charmeee/loop-test/milestones{/number}\",\"notifications_url\":\"https://api.github.com/repos/charmeee/loop-test/notifications{?since,all,participating}\",\"labels_url\":\"https://api.github.com/repos/charmeee/loop-test/labels{/name}\",\"releases_url\":\"https://api.github.com/repos/charmeee/loop-test/releases{/id}\",\"deployments_url\":\"https://api.github.com/repos/charmeee/loop-test/deployments\",\"created_at\":\"2026-10-06T00:12:31Z\",\"updated_at\":\"2026-10-06T01:12:07Z\",\"pushed_at\":\"2026-10-06T01:18:54Z\",\"git_url\":\"git://github.com/charmeee/loop-test.git\",\"ssh_url\":\"git@github.com:charmeee/loop-test.git\",\"clone_url\":\"https://github.com/charmeee/loop-test.git\",\"svn_url\":\"https://github.com/charmeee/loop-test\",\"homepage\":null,\"size\":0,\"stargazers_count\":0,\"watchers_count\":0,\"language\":\"JavaScript\",\"has_issues\":true,\"has_projects\":true,\"has_downloads\":false,\"has_wiki\":true,\"has_pages\":false,\"has_discussions\":false,\"forks_count\":0,\"mirror_url\":null,\"archived\":false,\"disabled\":false,\"open_issues_count\":3,\"license\":null,\"allow_forking\":true,\"is_template\":false,\"web_commit_signoff_required\":false,\"has_pull_requests\":true,\"pull_request_creation_policy\":\"all\",\"topics\":[],\"visibility\":\"public\",\"forks\":0,\"open_issues\":3,\"watchers\":0,\"default_branch\":\"main\"}},\"_links\":{\"self\":{\"href\":\"https://api.github.com/repos/charmeee/loop-test/pulls/1\"},\"html\":{\"href\":\"https://github.com/charmeee/loop-test/pull/1\"},\"issue\":{\"href\":\"https://api.github.com/repos/charmeee/loop-test/issues/1\"},\"comments\":{\"href\":\"https://api.github.com/repos/charmeee/loop-test/issues/1/comments\"},\"review_comments\":{\"href\":\"https://api.github.com/repos/charmeee/loop-test/pulls/1/comments\"},\"review_comment\":{\"href\":\"https://api.github.com/repos/charmeee/loop-test/pulls/comments{/number}\"},\"commits\":{\"href\":\"https://api.github.com/repos/charmeee/loop-test/pulls/1/commits\"},\"statuses\":{\"href\":\"https://api.github.com/repos/charmeee/loop-test/statuses/5603b1ffce470d52d16f4bdfa7d6d0610871d50e\"}},\"author_association\":\"OWNER\",\"auto_merge\":null,\"assignee\":null,\"active_lock_reason\":null,\"merged\":false,\"mergeable\":true,\"rebaseable\":true,\"mergeable_state\":\"clean\",\"merged_by\":null,\"comments\":0,\"review_comments\":0,\"maintainer_can_modify\":false,\"commits\":2,\"additions\":14,\"deletions\":0,\"changed_files\":2}",
+      "stderr": ""
+    },
+    "ci": {
+      "args": [
+        "gh",
+        "api",
+        "repos/charmeee/loop-test/commits/5603b1ffce470d52d16f4bdfa7d6d0610871d50e/check-runs"
+      ],
+      "code": 0,
+      "stdout": "{\"total_count\":2,\"check_runs\":[{\"id\":112058977732,\"name\":\"verify\",\"node_id\":\"CR_kwDOU9WZbc8AAAAaFzxNxA\",\"head_sha\":\"5603b1ffce470d52d16f4bdfa7d6d0610871d50e\",\"external_id\":\"5a32bc73-f053-5c6f-8cb7-8468eb65313d\",\"url\":\"https://api.github.com/repos/charmeee/loop-test/check-runs/112058977732\",\"html_url\":\"https://github.com/charmeee/loop-test/actions/runs/37398161808/job/112058977732\",\"details_url\":\"https://github.com/charmeee/loop-test/actions/runs/37398161808/job/112058977732\",\"status\":\"completed\",\"conclusion\":\"success\",\"started_at\":\"2026-10-06T01:14:38Z\",\"completed_at\":\"2026-10-06T01:14:46Z\",\"output\":{\"title\":null,\"summary\":null,\"text\":null,\"annotations_count\":2,\"annotations_url\":\"https://api.github.com/repos/charmeee/loop-test/check-runs/112058977732/annotations\"},\"check_suite\":{\"id\":101299916577},\"app\":{\"id\":15368,\"client_id\":\"Iv1.05c79e9ad1f6bdfa\",\"slug\":\"github-actions\",\"node_id\":\"MDM6QXBwMTUzNjg=\",\"owner\":{\"login\":\"github\",\"id\":9919,\"node_id\":\"MDEyOk9yZ2FuaXphdGlvbjk5MTk=\",\"avatar_url\":\"https://avatars.githubusercontent.com/u/9919?v=4\",\"gravatar_id\":\"\",\"url\":\"https://api.github.com/users/github\",\"html_url\":\"https://github.com/github\",\"followers_url\":\"https://api.github.com/users/github/followers\",\"following_url\":\"https://api.github.com/users/github/following{/other_user}\",\"gists_url\":\"https://api.github.com/users/github/gists{/gist_id}\",\"starred_url\":\"https://api.github.com/users/github/starred{/owner}{/repo}\",\"subscriptions_url\":\"https://api.github.com/users/github/subscriptions\",\"organizations_url\":\"https://api.github.com/users/github/orgs\",\"repos_url\":\"https://api.github.com/users/github/repos\",\"events_url\":\"https://api.github.com/users/github/events{/privacy}\",\"received_events_url\":\"https://api.github.com/users/github/received_events\",\"type\":\"Organization\",\"user_view_type\":\"public\",\"site_admin\":false},\"name\":\"GitHub Actions\",\"description\":\"Automate your workflow from idea to production\",\"external_url\":\"https://help.github.com/en/actions\",\"html_url\":\"https://github.com/apps/github-actions\",\"created_at\":\"2018-07-30T09:30:17Z\",\"updated_at\":\"2026-06-18T16:17:48Z\",\"permissions\":{\"actions\":\"write\",\"administration\":\"read\",\"artifact_metadata\":\"write\",\"attestations\":\"write\",\"checks\":\"write\",\"code_quality\":\"write\",\"contents\":\"write\",\"copilot_requests\":\"write\",\"deployments\":\"write\",\"discussions\":\"write\",\"drives\":\"write\",\"issues\":\"write\",\"merge_queues\":\"write\",\"metadata\":\"read\",\"models\":\"read\",\"packages\":\"write\",\"pages\":\"write\",\"pull_requests\":\"write\",\"repository_hooks\":\"write\",\"repository_projects\":\"write\",\"security_events\":\"write\",\"statuses\":\"write\",\"vulnerability_alerts\":\"read\"},\"events\":[\"branch_protection_rule\",\"check_run\",\"check_suite\",\"create\",\"delete\",\"deployment\",\"deployment_status\",\"discussion\",\"discussion_comment\",\"fork\",\"gollum\",\"issues\",\"issue_comment\",\"label\",\"merge_group\",\"milestone\",\"page_build\",\"public\",\"pull_request\",\"pull_request_review\",\"pull_request_review_comment\",\"push\",\"registry_package\",\"release\",\"repository\",\"repository_dispatch\",\"status\",\"watch\",\"workflow_dispatch\",\"workflow_run\"]},\"pull_requests\":[{\"url\":\"https://api.github.com/repos/charmeee/loop-test/pulls/1\",\"id\":4752796576,\"number\":1,\"head\":{\"ref\":\"feature/discount\",\"sha\":\"5603b1ffce470d52d16f4bdfa7d6d0610871d50e\",\"repo\":{\"id\":1406507373,\"url\":\"https://api.github.com/repos/charmeee/loop-test\",\"name\":\"loop-test\"}},\"base\":{\"ref\":\"main\",\"sha\":\"1c1dd24767af399a64bfd14237ad6977cb3e0058\",\"repo\":{\"id\":1406507373,\"url\":\"https://api.github.com/repos/charmeee/loop-test\",\"name\":\"loop-test\"}}}]},{\"id\":112058968878,\"name\":\"verify\",\"node_id\":\"CR_kwDOU9WZbc8AAAAaFzwrLg\",\"head_sha\":\"5603b1ffce470d52d16f4bdfa7d6d0610871d50e\",\"external_id\":\"8c73c724-295c-527e-a1cc-f62602ccec86\",\"url\":\"https://api.github.com/repos/charmeee/loop-test/check-runs/112058968878\",\"html_url\":\"https://github.com/charmeee/loop-test/actions/runs/37398159199/job/112058968878\",\"details_url\":\"https://github.com/charmeee/loop-test/actions/runs/37398159199/job/112058968878\",\"status\":\"completed\",\"conclusion\":\"success\",\"started_at\":\"2026-10-06T01:14:36Z\",\"completed_at\":\"2026-10-06T01:14:46Z\",\"output\":{\"title\":null,\"summary\":null,\"text\":null,\"annotations_count\":2,\"annotations_url\":\"https://api.github.com/repos/charmeee/loop-test/check-runs/112058968878/annotations\"},\"check_suite\":{\"id\":101299909568},\"app\":{\"id\":15368,\"client_id\":\"Iv1.05c79e9ad1f6bdfa\",\"slug\":\"github-actions\",\"node_id\":\"MDM6QXBwMTUzNjg=\",\"owner\":{\"login\":\"github\",\"id\":9919,\"node_id\":\"MDEyOk9yZ2FuaXphdGlvbjk5MTk=\",\"avatar_url\":\"https://avatars.githubusercontent.com/u/9919?v=4\",\"gravatar_id\":\"\",\"url\":\"https://api.github.com/users/github\",\"html_url\":\"https://github.com/github\",\"followers_url\":\"https://api.github.com/users/github/followers\",\"following_url\":\"https://api.github.com/users/github/following{/other_user}\",\"gists_url\":\"https://api.github.com/users/github/gists{/gist_id}\",\"starred_url\":\"https://api.github.com/users/github/starred{/owner}{/repo}\",\"subscriptions_url\":\"https://api.github.com/users/github/subscriptions\",\"organizations_url\":\"https://api.github.com/users/github/orgs\",\"repos_url\":\"https://api.github.com/users/github/repos\",\"events_url\":\"https://api.github.com/users/github/events{/privacy}\",\"received_events_url\":\"https://api.github.com/users/github/received_events\",\"type\":\"Organization\",\"user_view_type\":\"public\",\"site_admin\":false},\"name\":\"GitHub Actions\",\"description\":\"Automate your workflow from idea to production\",\"external_url\":\"https://help.github.com/en/actions\",\"html_url\":\"https://github.com/apps/github-actions\",\"created_at\":\"2018-07-30T09:30:17Z\",\"updated_at\":\"2026-06-18T16:17:48Z\",\"permissions\":{\"actions\":\"write\",\"administration\":\"read\",\"artifact_metadata\":\"write\",\"attestations\":\"write\",\"checks\":\"write\",\"code_quality\":\"write\",\"contents\":\"write\",\"copilot_requests\":\"write\",\"deployments\":\"write\",\"discussions\":\"write\",\"drives\":\"write\",\"issues\":\"write\",\"merge_queues\":\"write\",\"metadata\":\"read\",\"models\":\"read\",\"packages\":\"write\",\"pages\":\"write\",\"pull_requests\":\"write\",\"repository_hooks\":\"write\",\"repository_projects\":\"write\",\"security_events\":\"write\",\"statuses\":\"write\",\"vulnerability_alerts\":\"read\"},\"events\":[\"branch_protection_rule\",\"check_run\",\"check_suite\",\"create\",\"delete\",\"deployment\",\"deployment_status\",\"discussion\",\"discussion_comment\",\"fork\",\"gollum\",\"issues\",\"issue_comment\",\"label\",\"merge_group\",\"milestone\",\"page_build\",\"public\",\"pull_request\",\"pull_request_review\",\"pull_request_review_comment\",\"push\",\"registry_package\",\"release\",\"repository\",\"repository_dispatch\",\"status\",\"watch\",\"workflow_dispatch\",\"workflow_run\"]},\"pull_requests\":[{\"url\":\"https://api.github.com/repos/charmeee/loop-test/pulls/1\",\"id\":4752796576,\"number\":1,\"head\":{\"ref\":\"feature/discount\",\"sha\":\"5603b1ffce470d52d16f4bdfa7d6d0610871d50e\",\"repo\":{\"id\":1406507373,\"url\":\"https://api.github.com/repos/charmeee/loop-test\",\"name\":\"loop-test\"}},\"base\":{\"ref\":\"main\",\"sha\":\"1c1dd24767af399a64bfd14237ad6977cb3e0058\",\"repo\":{\"id\":1406507373,\"url\":\"https://api.github.com/repos/charmeee/loop-test\",\"name\":\"loop-test\"}}}]}]}",
+      "stderr": ""
+    },
+    "statuses": {
+      "args": [
+        "gh",
+        "api",
+        "repos/charmeee/loop-test/commits/5603b1ffce470d52d16f4bdfa7d6d0610871d50e/status"
+      ],
+      "code": 0,
+      "stdout": "{\"state\":\"pending\",\"statuses\":[],\"sha\":\"5603b1ffce470d52d16f4bdfa7d6d0610871d50e\",\"total_count\":0,\"repository\":{\"id\":1406507373,\"node_id\":\"R_kgDOU9WZbQ\",\"name\":\"loop-test\",\"full_name\":\"charmeee/loop-test\",\"private\":false,\"owner\":{\"login\":\"charmeee\",\"id\":75278669,\"node_id\":\"MDQ6VXNlcjc1Mjc4NjY5\",\"avatar_url\":\"https://avatars.githubusercontent.com/u/75278669?v=4\",\"gravatar_id\":\"\",\"url\":\"https://api.github.com/users/charmeee\",\"html_url\":\"https://github.com/charmeee\",\"followers_url\":\"https://api.github.com/users/charmeee/followers\",\"following_url\":\"https://api.github.com/users/charmeee/following{/other_user}\",\"gists_url\":\"https://api.github.com/users/charmeee/gists{/gist_id}\",\"starred_url\":\"https://api.github.com/users/charmeee/starred{/owner}{/repo}\",\"subscriptions_url\":\"https://api.github.com/users/charmeee/subscriptions\",\"organizations_url\":\"https://api.github.com/users/charmeee/orgs\",\"repos_url\":\"https://api.github.com/users/charmeee/repos\",\"events_url\":\"https://api.github.com/users/charmeee/events{/privacy}\",\"received_events_url\":\"https://api.github.com/users/charmeee/received_events\",\"type\":\"User\",\"user_view_type\":\"public\",\"site_admin\":false},\"html_url\":\"https://github.com/charmeee/loop-test\",\"description\":null,\"fork\":false,\"url\":\"https://api.github.com/repos/charmeee/loop-test\",\"forks_url\":\"https://api.github.com/repos/charmeee/loop-test/forks\",\"keys_url\":\"https://api.github.com/repos/charmeee/loop-test/keys{/key_id}\",\"collaborators_url\":\"https://api.github.com/repos/charmeee/loop-test/collaborators{/collaborator}\",\"teams_url\":\"https://api.github.com/repos/charmeee/loop-test/teams\",\"hooks_url\":\"https://api.github.com/repos/charmeee/loop-test/hooks\",\"issue_events_url\":\"https://api.github.com/repos/charmeee/loop-test/issues/events{/number}\",\"events_url\":\"https://api.github.com/repos/charmeee/loop-test/events\",\"assignees_url\":\"https://api.github.com/repos/charmeee/loop-test/assignees{/user}\",\"branches_url\":\"https://api.github.com/repos/charmeee/loop-test/branches{/branch}\",\"tags_url\":\"https://api.github.com/repos/charmeee/loop-test/tags\",\"blobs_url\":\"https://api.github.com/repos/charmeee/loop-test/git/blobs{/sha}\",\"git_tags_url\":\"https://api.github.com/repos/charmeee/loop-test/git/tags{/sha}\",\"git_refs_url\":\"https://api.github.com/repos/charmeee/loop-test/git/refs{/sha}\",\"trees_url\":\"https://api.github.com/repos/charmeee/loop-test/git/trees{/sha}\",\"statuses_url\":\"https://api.github.com/repos/charmeee/loop-test/statuses/{sha}\",\"languages_url\":\"https://api.github.com/repos/charmeee/loop-test/languages\",\"stargazers_url\":\"https://api.github.com/repos/charmeee/loop-test/stargazers\",\"contributors_url\":\"https://api.github.com/repos/charmeee/loop-test/contributors\",\"subscribers_url\":\"https://api.github.com/repos/charmeee/loop-test/subscribers\",\"subscription_url\":\"https://api.github.com/repos/charmeee/loop-test/subscription\",\"commits_url\":\"https://api.github.com/repos/charmeee/loop-test/commits{/sha}\",\"git_commits_url\":\"https://api.github.com/repos/charmeee/loop-test/git/commits{/sha}\",\"comments_url\":\"https://api.github.com/repos/charmeee/loop-test/comments{/number}\",\"issue_comment_url\":\"https://api.github.com/repos/charmeee/loop-test/issues/comments{/number}\",\"contents_url\":\"https://api.github.com/repos/charmeee/loop-test/contents/{+path}\",\"compare_url\":\"https://api.github.com/repos/charmeee/loop-test/compare/{base}...{head}\",\"merges_url\":\"https://api.github.com/repos/charmeee/loop-test/merges\",\"archive_url\":\"https://api.github.com/repos/charmeee/loop-test/{archive_format}{/ref}\",\"downloads_url\":\"https://api.github.com/repos/charmeee/loop-test/downloads\",\"issues_url\":\"https://api.github.com/repos/charmeee/loop-test/issues{/number}\",\"pulls_url\":\"https://api.github.com/repos/charmeee/loop-test/pulls{/number}\",\"milestones_url\":\"https://api.github.com/repos/charmeee/loop-test/milestones{/number}\",\"notifications_url\":\"https://api.github.com/repos/charmeee/loop-test/notifications{?since,all,participating}\",\"labels_url\":\"https://api.github.com/repos/charmeee/loop-test/labels{/name}\",\"releases_url\":\"https://api.github.com/repos/charmeee/loop-test/releases{/id}\",\"deployments_url\":\"https://api.github.com/repos/charmeee/loop-test/deployments\"},\"commit_url\":\"https://api.github.com/repos/charmeee/loop-test/commits/5603b1ffce470d52d16f4bdfa7d6d0610871d50e\",\"url\":\"https://api.github.com/repos/charmeee/loop-test/commits/5603b1ffce470d52d16f4bdfa7d6d0610871d50e/status\"}",
+      "stderr": ""
+    },
+    "hashes": {
+      "tests/app.test.mjs": [
+        "fadefb8ea866d27ff3d9c9fe0c74648a120487e338c71d740b83bb774e46c056",
+        "fadefb8ea866d27ff3d9c9fe0c74648a120487e338c71d740b83bb774e46c056",
+        "fadefb8ea866d27ff3d9c9fe0c74648a120487e338c71d740b83bb774e46c056"
+      ],
+      "tests/discount.test.mjs": [
+        "062f2f933608122a8a28560f222bd6b647b159b0a24a02ec51ba6251582d1720",
+        "062f2f933608122a8a28560f222bd6b647b159b0a24a02ec51ba6251582d1720",
+        "062f2f933608122a8a28560f222bd6b647b159b0a24a02ec51ba6251582d1720"
+      ],
+      "tests/loop.test.mjs": [
+        "5adeab2ab74153a7c21f077c03b048dc3bc6ae27366470fef614a5bb5905bb34",
+        "5adeab2ab74153a7c21f077c03b048dc3bc6ae27366470fef614a5bb5905bb34",
+        "5adeab2ab74153a7c21f077c03b048dc3bc6ae27366470fef614a5bb5905bb34"
+      ]
+    },
+    "testsImmutable": true,
+    "gate": {
+      "args": [
+        "/Users/jeonminji/company/loop-engineer-test/node_modules/.bin/loop-gate",
+        "check",
+        "--action",
+        "auto-merge",
+        "--paths",
+        "src/discount.mjs",
+        "--gate-file",
+        "/Users/jeonminji/company/loop-engineer-test/gate.yaml",
+        "--json"
+      ],
+      "code": 0,
+      "stdout": "{\n  \"allowed\": true,\n  \"trigger\": \"ok\",\n  \"reason\": \"Within policy \u2014 cleared to proceed.\",\n  \"matchedPaths\": []\n}\n",
+      "stderr": ""
+    },
+    "checks": [
+      {
+        "args": [
+          "npm",
+          "ci"
+        ],
+        "code": 0,
+        "stdout": "\nadded 12 packages, and audited 13 packages in 2s\n\n2 packages are looking for funding\n  run `npm fund` for details\n\nfound 0 vulnerabilities\n",
+        "stderr": ""
+      },
+      {
+        "args": [
+          "npm",
+          "test"
+        ],
+        "code": 0,
+        "stdout": "\n> loop-engineer-test@1.0.0 test\n> node --test tests/*.test.mjs\n\nTAP version 13\n# Subtest: money rounds ordinary values\nok 1 - money rounds ordinary values\n  ---\n  duration_ms: 1.1605\n  ...\n# Subtest: money rejects non-finite values\nok 2 - money rejects non-finite values\n  ---\n  duration_ms: 0.7175\n  ...\n# Subtest: discount computes total\nok 3 - discount computes total\n  ---\n  duration_ms: 0.865041\n  ...\n# Subtest: discount rejects invalid inputs\nok 4 - discount rejects invalid inputs\n  ---\n  duration_ms: 0.385334\n  ...\n# Subtest: discount supports full and zero discount\nok 5 - discount supports full and zero discount\n  ---\n  duration_ms: 0.070083\n  ...\n# Subtest: fresh ledger permits a report-only run\nok 6 - fresh ledger permits a report-only run\n  ---\n  duration_ms: 340.249\n  ...\n# Subtest: repeated failure trips circuit breaker\nok 7 - repeated failure trips circuit breaker\n  ---\n  duration_ms: 36.4765\n  ...\n# Subtest: token cap trips circuit breaker\nok 8 - token cap trips circuit breaker\n  ---\n  duration_ms: 35.133375\n  ...\n# Subtest: sensitive paths require escalation\nok 9 - sensitive paths require escalation\n  ---\n  duration_ms: 203.526292\n  ...\n# Subtest: L3 policy prevents documentation auto-merge\nok 10 - L3 policy prevents documentation auto-merge\n  ---\n  duration_ms: 61.630125\n  ...\n# Subtest: non-sensitive changes can be reviewed for a manual commit\nok 11 - non-sensitive changes can be reviewed for a manual commit\n  ---\n  duration_ms: 78.462\n  ...\n# Subtest: kill switch stops before invoking any tools\nok 12 - kill switch stops before invoking any tools\n  ---\n  duration_ms: 41.311542\n  ...\n# Subtest: L3 allows implementation repairs only\nok 13 - L3 allows implementation repairs only\n  ---\n  duration_ms: 70.8585\n  ...\n# Subtest: L3 rejects test changes\nok 14 - L3 rejects test changes\n  ---\n  duration_ms: 64.198042\n  ...\n1..14\n# tests 14\n# suites 0\n# pass 14\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 1012.840125\n",
+        "stderr": ""
+      },
+      {
+        "args": [
+          "npm",
+          "run",
+          "lint"
+        ],
+        "code": 0,
+        "stdout": "\n> loop-engineer-test@1.0.0 lint\n> node --check scripts/check.mjs && node --check scripts/sync.mjs && node --check src/money.mjs\n\n",
+        "stderr": ""
+      },
+      {
+        "args": [
+          "npm",
+          "run",
+          "loop:check"
+        ],
+        "code": 0,
+        "stdout": "\n> loop-engineer-test@1.0.0 loop:check\n> node scripts/check.mjs\n\nCONTINUE [ok] \u2014 Within limits \u2014 cleared to continue.\n\nLoop doctor \u2014 /Users/jeonminji/company/loop-l3-worktrees/discount\n\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\nReady:   100/100 L3\n         Strong loop readiness \u2014 good candidate for L3 with explicit gates.\nSync:    n/a\nFiles:   state=STATE.md  LOOP.md=yes  budget=yes  run-log=yes  gate=yes\nStatus:  HEALTHY (exit 0)\n\nTop next actions:\n  1. Copy or create docs/safety.md (denylists, auto-merge policy, MCP scopes)\n  2. Add patterns/registry.yaml following the existing format\n  3. Declare allowed-tools in SKILL.md frontmatter, or document tool/MCP scopes in docs/safety.md (least privilege per role)\n\nNotes:\n  \u00b7 Could not parse loop-sync JSON output\n\nWeek one: report only. Old packages still work: loop-init, loop-audit, \u2026\nDocs: https://github.com/cobusgreyling/loop-engineering/blob/main/docs/QUICKSTART.md\n\n{\n  \"score\": 90,\n  \"level\": \"healthy\",\n  \"issues\": [\n    {\n      \"type\": \"inconsistent\",\n      \"file\": \"STATE.md \u2194 LOOP.md\",\n      \"message\": \"Low structural similarity between STATE.md and LOOP.md\",\n      \"severity\": \"warning\",\n      \"suggestion\": \"Review both files for consistency\"\n    }\n  ],\n  \"suggestions\": [\n    \"Review STATE.md and LOOP.md for consistency\"\n  ],\n  \"timestamp\": \"2026-10-06T01:20:56.277Z\"\n}\n",
+        "stderr": ""
+      }
+    ],
+    "syntax": [
+      {
+        "args": [
+          "node",
+          "--check",
+          "src/discount.mjs"
+        ],
+        "code": 0,
+        "stdout": "",
+        "stderr": ""
+      }
+    ],
+    "postStatus": {
+      "args": [
+        "git",
+        "status",
+        "--porcelain"
+      ],
+      "code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    "finalRemote": "5603b1ffce470d52d16f4bdfa7d6d0610871d50e\trefs/heads/feature/discount\n"
+  },
+  "followups": [
+    {
+      "args": [
+        "orca",
+        "orchestration",
+        "check",
+        "--terminal",
+        "term_9fdd9812-bfc8-4265-af67-d6d080c1bde4",
+        "--json"
+      ],
+      "code": 0,
+      "stdout": "{\n  \"id\": \"c18fc661-8752-4ffe-8653-6e4922892b18\",\n  \"ok\": true,\n  \"result\": {\n    \"runId\": \"run_1a57e0e44eda\",\n    \"dispatchId\": \"ctx_ea031bc6d96e\",\n    \"deliveryId\": null,\n    \"messages\": [],\n    \"count\": 0,\n    \"replayed\": false,\n    \"acknowledged\": null,\n    \"timedOut\": false,\n    \"cancelled\": false,\n    \"connectionLost\": false,\n    \"mutation\": {\n      \"requestId\": \"6496c8f6-94e7-4d0a-b5a7-627e0a3ba559\",\n      \"replayed\": false\n    }\n  },\n  \"_meta\": {\n    \"runtimeId\": \"6ce763e8-8ab0-414b-89ce-d0fb4756cead\"\n  }\n}\n",
+      "stderr": ""
+    },
+    {
+      "args": [
+        "orca",
+        "orchestration",
+        "check",
+        "--terminal",
+        "term_9fdd9812-bfc8-4265-af67-d6d080c1bde4",
+        "--json"
+      ],
+      "code": 0,
+      "stdout": "{\n  \"id\": \"3c069c22-b7c4-434b-9b09-afdd8427fbec\",\n  \"ok\": true,\n  \"result\": {\n    \"runId\": \"run_1a57e0e44eda\",\n    \"dispatchId\": \"ctx_ea031bc6d96e\",\n    \"deliveryId\": null,\n    \"messages\": [],\n    \"count\": 0,\n    \"replayed\": false,\n    \"acknowledged\": null,\n    \"timedOut\": false,\n    \"cancelled\": false,\n    \"connectionLost\": false,\n    \"mutation\": {\n      \"requestId\": \"0d7b9303-2c5c-40d8-86a8-065928ccaf33\",\n      \"replayed\": false\n    }\n  },\n  \"_meta\": {\n    \"runtimeId\": \"6ce763e8-8ab0-414b-89ce-d0fb4756cead\"\n  }\n}\n",
+      "stderr": ""
+    },
+    {
+      "args": [
+        "orca",
+        "orchestration",
+        "check",
+        "--terminal",
+        "term_9fdd9812-bfc8-4265-af67-d6d080c1bde4",
+        "--json"
+      ],
+      "code": 0,
+      "stdout": "{\n  \"id\": \"58d246fa-8e68-4716-a000-86ba838aa619\",\n  \"ok\": true,\n  \"result\": {\n    \"runId\": \"run_1a57e0e44eda\",\n    \"dispatchId\": \"ctx_ea031bc6d96e\",\n    \"deliveryId\": null,\n    \"messages\": [],\n    \"count\": 0,\n    \"replayed\": false,\n    \"acknowledged\": null,\n    \"timedOut\": false,\n    \"cancelled\": false,\n    \"connectionLost\": false,\n    \"mutation\": {\n      \"requestId\": \"10b6a236-95de-4d63-a295-1bfa2a1a2d45\",\n      \"replayed\": false\n    }\n  },\n  \"_meta\": {\n    \"runtimeId\": \"6ce763e8-8ab0-414b-89ce-d0fb4756cead\"\n  }\n}\n",
+      "stderr": ""
+    },
+    {
+      "args": [
+        "orca",
+        "orchestration",
+        "check",
+        "--terminal",
+        "term_9fdd9812-bfc8-4265-af67-d6d080c1bde4",
+        "--json"
+      ],
+      "code": 0,
+      "stdout": "{\n  \"id\": \"28c6d4bf-d3b2-41ae-8c70-d2bf1f9b626a\",\n  \"ok\": true,\n  \"result\": {\n    \"runId\": \"run_1a57e0e44eda\",\n    \"dispatchId\": \"ctx_ea031bc6d96e\",\n    \"deliveryId\": null,\n    \"messages\": [],\n    \"count\": 0,\n    \"replayed\": false,\n    \"acknowledged\": null,\n    \"timedOut\": false,\n    \"cancelled\": false,\n    \"connectionLost\": false,\n    \"mutation\": {\n      \"requestId\": \"462c731b-6e4f-4ca4-98c9-5383b07568cd\",\n      \"replayed\": false\n    }\n  },\n  \"_meta\": {\n    \"runtimeId\": \"6ce763e8-8ab0-414b-89ce-d0fb4756cead\"\n  }\n}\n",
+      "stderr": ""
+    }
+  ],
+  "2": {
+    "sha": "483952dd3f3592cd21219da45dda151e58a0cb63",
+    "head": {
+      "args": [
+        "git",
+        "rev-parse",
+        "HEAD"
+      ],
+      "code": 0,
+      "stdout": "483952dd3f3592cd21219da45dda151e58a0cb63\n",
+      "stderr": ""
+    },
+    "status": {
+      "args": [
+        "git",
+        "status",
+        "--porcelain"
+      ],
+      "code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    "remote": {
+      "args": [
+        "git",
+        "ls-remote",
+        "origin",
+        "refs/heads/feature/statistics"
+      ],
+      "code": 0,
+      "stdout": "483952dd3f3592cd21219da45dda151e58a0cb63\trefs/heads/feature/statistics\n",
+      "stderr": ""
+    },
+    "diff": {
+      "args": [
+        "git",
+        "diff",
+        "--name-only",
+        "99c9931b5b2fbbd0885af8d40bdadc5dd3d4d5f0",
+        "483952dd3f3592cd21219da45dda151e58a0cb63"
+      ],
+      "code": 0,
+      "stdout": "src/statistics.mjs\n",
+      "stderr": ""
+    },
+    "diffCheck": {
+      "args": [
+        "git",
+        "diff",
+        "--check",
+        "99c9931b5b2fbbd0885af8d40bdadc5dd3d4d5f0",
+        "483952dd3f3592cd21219da45dda151e58a0cb63"
+      ],
+      "code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    "pr": {
+      "args": [
+        "gh",
+        "api",
+        "repos/charmeee/loop-test/pulls/2"
+      ],
+      "code": 0,
+      "stdout": "{\"url\":\"https://api.github.com/repos/charmeee/loop-test/pulls/2\",\"id\":4752796979,\"node_id\":\"PR_kwDOU9WZbc8AAAABG0ntMw\",\"html_url\":\"https://github.com/charmeee/loop-test/pull/2\",\"diff_url\":\"https://github.com/charmeee/loop-test/pull/2.diff\",\"patch_url\":\"https://github.com/charmeee/loop-test/pull/2.patch\",\"issue_url\":\"https://api.github.com/repos/charmeee/loop-test/issues/2\",\"number\":2,\"state\":\"open\",\"locked\":false,\"title\":\"feat: \uacac\uc801 \ud1b5\uacc4 \uae30\ub2a5 \ucd94\uac00\",\"user\":{\"login\":\"charmeee\",\"id\":75278669,\"node_id\":\"MDQ6VXNlcjc1Mjc4NjY5\",\"avatar_url\":\"https://avatars.githubusercontent.com/u/75278669?v=4\",\"gravatar_id\":\"\",\"url\":\"https://api.github.com/users/charmeee\",\"html_url\":\"https://github.com/charmeee\",\"followers_url\":\"https://api.github.com/users/charmeee/followers\",\"following_url\":\"https://api.github.com/users/charmeee/following{/other_user}\",\"gists_url\":\"https://api.github.com/users/charmeee/gists{/gist_id}\",\"starred_url\":\"https://api.github.com/users/charmeee/starred{/owner}{/repo}\",\"subscriptions_url\":\"https://api.github.com/users/charmeee/subscriptions\",\"organizations_url\":\"https://api.github.com/users/charmeee/orgs\",\"repos_url\":\"https://api.github.com/users/charmeee/repos\",\"events_url\":\"https://api.github.com/users/charmeee/events{/privacy}\",\"received_events_url\":\"https://api.github.com/users/charmeee/received_events\",\"type\":\"User\",\"user_view_type\":\"public\",\"site_admin\":false},\"body\":\"\uacac\uc801 \ubaa9\ub85d\uc758 \uac1c\uc218\u00b7\ud569\uacc4\u00b7\ud3c9\uade0\uc744 \uacc4\uc0b0\ud569\ub2c8\ub2e4. \ube48 \ubaa9\ub85d\uc758 \ud3c9\uade0\uc740 0\uc774\uba70 \ube44\uc720\ud55c \uc785\ub825 \uac12\uc740 TypeError\ub85c \uac70\ubd80\ud569\ub2c8\ub2e4.\\n\\n\uac80\uc99d: GitHub Actions\uc640 \ub85c\uceec \ud14c\uc2a4\ud2b8 14\uac1c \ud1b5\uacfc. \uae30\uc874 \ud68c\uadc0 \ud14c\uc2a4\ud2b8\ub97c \uc720\uc9c0\ud558\uace0 src/statistics.mjs\ub9cc \uc218\uc815\ud588\uc2b5\ub2c8\ub2e4. \ubcc4\ub3c4 checker\uac00 \uc815\ud655\ud55c \ucee4\ubc0b\uc744 \uac80\uc99d\ud55c \ub4a4 L3 \uac8c\uc774\ud2b8\uac00 \uba38\uc9c0\ud569\ub2c8\ub2e4.\\n\",\"created_at\":\"2026-10-06T01:12:20Z\",\"updated_at\":\"2026-10-06T01:15:57Z\",\"closed_at\":null,\"merged_at\":null,\"merge_commit_sha\":\"7e068dcc594d85295b23c6d9671b7828fe0c6c3a\",\"assignees\":[],\"requested_reviewers\":[],\"requested_teams\":[],\"labels\":[],\"milestone\":null,\"draft\":false,\"commits_url\":\"https://api.github.com/repos/charmeee/loop-test/pulls/2/commits\",\"review_comments_url\":\"https://api.github.com/repos/charmeee/loop-test/pulls/2/comments\",\"review_comment_url\":\"https://api.github.com/repos/charmeee/loop-test/pulls/comments{/number}\",\"comments_url\":\"https://api.github.com/repos/charmeee/loop-test/issues/2/comments\",\"statuses_url\":\"https://api.github.com/repos/charmeee/loop-test/statuses/483952dd3f3592cd21219da45dda151e58a0cb63\",\"head\":{\"label\":\"charmeee:feature/statistics\",\"ref\":\"feature/statistics\",\"sha\":\"483952dd3f3592cd21219da45dda151e58a0cb63\",\"user\":{\"login\":\"charmeee\",\"id\":75278669,\"node_id\":\"MDQ6VXNlcjc1Mjc4NjY5\",\"avatar_url\":\"https://avatars.githubusercontent.com/u/75278669?v=4\",\"gravatar_id\":\"\",\"url\":\"https://api.github.com/users/charmeee\",\"html_url\":\"https://github.com/charmeee\",\"followers_url\":\"https://api.github.com/users/charmeee/followers\",\"following_url\":\"https://api.github.com/users/charmeee/following{/other_user}\",\"gists_url\":\"https://api.github.com/users/charmeee/gists{/gist_id}\",\"starred_url\":\"https://api.github.com/users/charmeee/starred{/owner}{/repo}\",\"subscriptions_url\":\"https://api.github.com/users/charmeee/subscriptions\",\"organizations_url\":\"https://api.github.com/users/charmeee/orgs\",\"repos_url\":\"https://api.github.com/users/charmeee/repos\",\"events_url\":\"https://api.github.com/users/charmeee/events{/privacy}\",\"received_events_url\":\"https://api.github.com/users/charmeee/received_events\",\"type\":\"User\",\"user_view_type\":\"public\",\"site_admin\":false},\"repo\":{\"id\":1406507373,\"node_id\":\"R_kgDOU9WZbQ\",\"name\":\"loop-test\",\"full_name\":\"charmeee/loop-test\",\"private\":false,\"owner\":{\"login\":\"charmeee\",\"id\":75278669,\"node_id\":\"MDQ6VXNlcjc1Mjc4NjY5\",\"avatar_url\":\"https://avatars.githubusercontent.com/u/75278669?v=4\",\"gravatar_id\":\"\",\"url\":\"https://api.github.com/users/charmeee\",\"html_url\":\"https://github.com/charmeee\",\"followers_url\":\"https://api.github.com/users/charmeee/followers\",\"following_url\":\"https://api.github.com/users/charmeee/following{/other_user}\",\"gists_url\":\"https://api.github.com/users/charmeee/gists{/gist_id}\",\"starred_url\":\"https://api.github.com/users/charmeee/starred{/owner}{/repo}\",\"subscriptions_url\":\"https://api.github.com/users/charmeee/subscriptions\",\"organizations_url\":\"https://api.github.com/users/charmeee/orgs\",\"repos_url\":\"https://api.github.com/users/charmeee/repos\",\"events_url\":\"https://api.github.com/users/charmeee/events{/privacy}\",\"received_events_url\":\"https://api.github.com/users/charmeee/received_events\",\"type\":\"User\",\"user_view_type\":\"public\",\"site_admin\":false},\"html_url\":\"https://github.com/charmeee/loop-test\",\"description\":null,\"fork\":false,\"url\":\"https://api.github.com/repos/charmeee/loop-test\",\"forks_url\":\"https://api.github.com/repos/charmeee/loop-test/forks\",\"keys_url\":\"https://api.github.com/repos/charmeee/loop-test/keys{/key_id}\",\"collaborators_url\":\"https://api.github.com/repos/charmeee/loop-test/collaborators{/collaborator}\",\"teams_url\":\"https://api.github.com/repos/charmeee/loop-test/teams\",\"hooks_url\":\"https://api.github.com/repos/charmeee/loop-test/hooks\",\"issue_events_url\":\"https://api.github.com/repos/charmeee/loop-test/issues/events{/number}\",\"events_url\":\"https://api.github.com/repos/charmeee/loop-test/events\",\"assignees_url\":\"https://api.github.com/repos/charmeee/loop-test/assignees{/user}\",\"branches_url\":\"https://api.github.com/repos/charmeee/loop-test/branches{/branch}\",\"tags_url\":\"https://api.github.com/repos/charmeee/loop-test/tags\",\"blobs_url\":\"https://api.github.com/repos/charmeee/loop-test/git/blobs{/sha}\",\"git_tags_url\":\"https://api.github.com/repos/charmeee/loop-test/git/tags{/sha}\",\"git_refs_url\":\"https://api.github.com/repos/charmeee/loop-test/git/refs{/sha}\",\"trees_url\":\"https://api.github.com/repos/charmeee/loop-test/git/trees{/sha}\",\"statuses_url\":\"https://api.github.com/repos/charmeee/loop-test/statuses/{sha}\",\"languages_url\":\"https://api.github.com/repos/charmeee/loop-test/languages\",\"stargazers_url\":\"https://api.github.com/repos/charmeee/loop-test/stargazers\",\"contributors_url\":\"https://api.github.com/repos/charmeee/loop-test/contributors\",\"subscribers_url\":\"https://api.github.com/repos/charmeee/loop-test/subscribers\",\"subscription_url\":\"https://api.github.com/repos/charmeee/loop-test/subscription\",\"commits_url\":\"https://api.github.com/repos/charmeee/loop-test/commits{/sha}\",\"git_commits_url\":\"https://api.github.com/repos/charmeee/loop-test/git/commits{/sha}\",\"comments_url\":\"https://api.github.com/repos/charmeee/loop-test/comments{/number}\",\"issue_comment_url\":\"https://api.github.com/repos/charmeee/loop-test/issues/comments{/number}\",\"contents_url\":\"https://api.github.com/repos/charmeee/loop-test/contents/{+path}\",\"compare_url\":\"https://api.github.com/repos/charmeee/loop-test/compare/{base}...{head}\",\"merges_url\":\"https://api.github.com/repos/charmeee/loop-test/merges\",\"archive_url\":\"https://api.github.com/repos/charmeee/loop-test/{archive_format}{/ref}\",\"downloads_url\":\"https://api.github.com/repos/charmeee/loop-test/downloads\",\"issues_url\":\"https://api.github.com/repos/charmeee/loop-test/issues{/number}\",\"pulls_url\":\"https://api.github.com/repos/charmeee/loop-test/pulls{/number}\",\"milestones_url\":\"https://api.github.com/repos/charmeee/loop-test/milestones{/number}\",\"notifications_url\":\"https://api.github.com/repos/charmeee/loop-test/notifications{?since,all,participating}\",\"labels_url\":\"https://api.github.com/repos/charmeee/loop-test/labels{/name}\",\"releases_url\":\"https://api.github.com/repos/charmeee/loop-test/releases{/id}\",\"deployments_url\":\"https://api.github.com/repos/charmeee/loop-test/deployments\",\"created_at\":\"2026-10-06T00:12:31Z\",\"updated_at\":\"2026-10-06T01:12:07Z\",\"pushed_at\":\"2026-10-06T01:18:54Z\",\"git_url\":\"git://github.com/charmeee/loop-test.git\",\"ssh_url\":\"git@github.com:charmeee/loop-test.git\",\"clone_url\":\"https://github.com/charmeee/loop-test.git\",\"svn_url\":\"https://github.com/charmeee/loop-test\",\"homepage\":null,\"size\":0,\"stargazers_count\":0,\"watchers_count\":0,\"language\":\"JavaScript\",\"has_issues\":true,\"has_projects\":true,\"has_downloads\":false,\"has_wiki\":true,\"has_pages\":false,\"has_discussions\":false,\"forks_count\":0,\"mirror_url\":null,\"archived\":false,\"disabled\":false,\"open_issues_count\":3,\"license\":null,\"allow_forking\":true,\"is_template\":false,\"web_commit_signoff_required\":false,\"has_pull_requests\":true,\"pull_request_creation_policy\":\"all\",\"topics\":[],\"visibility\":\"public\",\"forks\":0,\"open_issues\":3,\"watchers\":0,\"default_branch\":\"main\"}},\"base\":{\"label\":\"charmeee:main\",\"ref\":\"main\",\"sha\":\"1c1dd24767af399a64bfd14237ad6977cb3e0058\",\"user\":{\"login\":\"charmeee\",\"id\":75278669,\"node_id\":\"MDQ6VXNlcjc1Mjc4NjY5\",\"avatar_url\":\"https://avatars.githubusercontent.com/u/75278669?v=4\",\"gravatar_id\":\"\",\"url\":\"https://api.github.com/users/charmeee\",\"html_url\":\"https://github.com/charmeee\",\"followers_url\":\"https://api.github.com/users/charmeee/followers\",\"following_url\":\"https://api.github.com/users/charmeee/following{/other_user}\",\"gists_url\":\"https://api.github.com/users/charmeee/gists{/gist_id}\",\"starred_url\":\"https://api.github.com/users/charmeee/starred{/owner}{/repo}\",\"subscriptions_url\":\"https://api.github.com/users/charmeee/subscriptions\",\"organizations_url\":\"https://api.github.com/users/charmeee/orgs\",\"repos_url\":\"https://api.github.com/users/charmeee/repos\",\"events_url\":\"https://api.github.com/users/charmeee/events{/privacy}\",\"received_events_url\":\"https://api.github.com/users/charmeee/received_events\",\"type\":\"User\",\"user_view_type\":\"public\",\"site_admin\":false},\"repo\":{\"id\":1406507373,\"node_id\":\"R_kgDOU9WZbQ\",\"name\":\"loop-test\",\"full_name\":\"charmeee/loop-test\",\"private\":false,\"owner\":{\"login\":\"charmeee\",\"id\":75278669,\"node_id\":\"MDQ6VXNlcjc1Mjc4NjY5\",\"avatar_url\":\"https://avatars.githubusercontent.com/u/75278669?v=4\",\"gravatar_id\":\"\",\"url\":\"https://api.github.com/users/charmeee\",\"html_url\":\"https://github.com/charmeee\",\"followers_url\":\"https://api.github.com/users/charmeee/followers\",\"following_url\":\"https://api.github.com/users/charmeee/following{/other_user}\",\"gists_url\":\"https://api.github.com/users/charmeee/gists{/gist_id}\",\"starred_url\":\"https://api.github.com/users/charmeee/starred{/owner}{/repo}\",\"subscriptions_url\":\"https://api.github.com/users/charmeee/subscriptions\",\"organizations_url\":\"https://api.github.com/users/charmeee/orgs\",\"repos_url\":\"https://api.github.com/users/charmeee/repos\",\"events_url\":\"https://api.github.com/users/charmeee/events{/privacy}\",\"received_events_url\":\"https://api.github.com/users/charmeee/received_events\",\"type\":\"User\",\"user_view_type\":\"public\",\"site_admin\":false},\"html_url\":\"https://github.com/charmeee/loop-test\",\"description\":null,\"fork\":false,\"url\":\"https://api.github.com/repos/charmeee/loop-test\",\"forks_url\":\"https://api.github.com/repos/charmeee/loop-test/forks\",\"keys_url\":\"https://api.github.com/repos/charmeee/loop-test/keys{/key_id}\",\"collaborators_url\":\"https://api.github.com/repos/charmeee/loop-test/collaborators{/collaborator}\",\"teams_url\":\"https://api.github.com/repos/charmeee/loop-test/teams\",\"hooks_url\":\"https://api.github.com/repos/charmeee/loop-test/hooks\",\"issue_events_url\":\"https://api.github.com/repos/charmeee/loop-test/issues/events{/number}\",\"events_url\":\"https://api.github.com/repos/charmeee/loop-test/events\",\"assignees_url\":\"https://api.github.com/repos/charmeee/loop-test/assignees{/user}\",\"branches_url\":\"https://api.github.com/repos/charmeee/loop-test/branches{/branch}\",\"tags_url\":\"https://api.github.com/repos/charmeee/loop-test/tags\",\"blobs_url\":\"https://api.github.com/repos/charmeee/loop-test/git/blobs{/sha}\",\"git_tags_url\":\"https://api.github.com/repos/charmeee/loop-test/git/tags{/sha}\",\"git_refs_url\":\"https://api.github.com/repos/charmeee/loop-test/git/refs{/sha}\",\"trees_url\":\"https://api.github.com/repos/charmeee/loop-test/git/trees{/sha}\",\"statuses_url\":\"https://api.github.com/repos/charmeee/loop-test/statuses/{sha}\",\"languages_url\":\"https://api.github.com/repos/charmeee/loop-test/languages\",\"stargazers_url\":\"https://api.github.com/repos/charmeee/loop-test/stargazers\",\"contributors_url\":\"https://api.github.com/repos/charmeee/loop-test/contributors\",\"subscribers_url\":\"https://api.github.com/repos/charmeee/loop-test/subscribers\",\"subscription_url\":\"https://api.github.com/repos/charmeee/loop-test/subscription\",\"commits_url\":\"https://api.github.com/repos/charmeee/loop-test/commits{/sha}\",\"git_commits_url\":\"https://api.github.com/repos/charmeee/loop-test/git/commits{/sha}\",\"comments_url\":\"https://api.github.com/repos/charmeee/loop-test/comments{/number}\",\"issue_comment_url\":\"https://api.github.com/repos/charmeee/loop-test/issues/comments{/number}\",\"contents_url\":\"https://api.github.com/repos/charmeee/loop-test/contents/{+path}\",\"compare_url\":\"https://api.github.com/repos/charmeee/loop-test/compare/{base}...{head}\",\"merges_url\":\"https://api.github.com/repos/charmeee/loop-test/merges\",\"archive_url\":\"https://api.github.com/repos/charmeee/loop-test/{archive_format}{/ref}\",\"downloads_url\":\"https://api.github.com/repos/charmeee/loop-test/downloads\",\"issues_url\":\"https://api.github.com/repos/charmeee/loop-test/issues{/number}\",\"pulls_url\":\"https://api.github.com/repos/charmeee/loop-test/pulls{/number}\",\"milestones_url\":\"https://api.github.com/repos/charmeee/loop-test/milestones{/number}\",\"notifications_url\":\"https://api.github.com/repos/charmeee/loop-test/notifications{?since,all,participating}\",\"labels_url\":\"https://api.github.com/repos/charmeee/loop-test/labels{/name}\",\"releases_url\":\"https://api.github.com/repos/charmeee/loop-test/releases{/id}\",\"deployments_url\":\"https://api.github.com/repos/charmeee/loop-test/deployments\",\"created_at\":\"2026-10-06T00:12:31Z\",\"updated_at\":\"2026-10-06T01:12:07Z\",\"pushed_at\":\"2026-10-06T01:18:54Z\",\"git_url\":\"git://github.com/charmeee/loop-test.git\",\"ssh_url\":\"git@github.com:charmeee/loop-test.git\",\"clone_url\":\"https://github.com/charmeee/loop-test.git\",\"svn_url\":\"https://github.com/charmeee/loop-test\",\"homepage\":null,\"size\":0,\"stargazers_count\":0,\"watchers_count\":0,\"language\":\"JavaScript\",\"has_issues\":true,\"has_projects\":true,\"has_downloads\":false,\"has_wiki\":true,\"has_pages\":false,\"has_discussions\":false,\"forks_count\":0,\"mirror_url\":null,\"archived\":false,\"disabled\":false,\"open_issues_count\":3,\"license\":null,\"allow_forking\":true,\"is_template\":false,\"web_commit_signoff_required\":false,\"has_pull_requests\":true,\"pull_request_creation_policy\":\"all\",\"topics\":[],\"visibility\":\"public\",\"forks\":0,\"open_issues\":3,\"watchers\":0,\"default_branch\":\"main\"}},\"_links\":{\"self\":{\"href\":\"https://api.github.com/repos/charmeee/loop-test/pulls/2\"},\"html\":{\"href\":\"https://github.com/charmeee/loop-test/pull/2\"},\"issue\":{\"href\":\"https://api.github.com/repos/charmeee/loop-test/issues/2\"},\"comments\":{\"href\":\"https://api.github.com/repos/charmeee/loop-test/issues/2/comments\"},\"review_comments\":{\"href\":\"https://api.github.com/repos/charmeee/loop-test/pulls/2/comments\"},\"review_comment\":{\"href\":\"https://api.github.com/repos/charmeee/loop-test/pulls/comments{/number}\"},\"commits\":{\"href\":\"https://api.github.com/repos/charmeee/loop-test/pulls/2/commits\"},\"statuses\":{\"href\":\"https://api.github.com/repos/charmeee/loop-test/statuses/483952dd3f3592cd21219da45dda151e58a0cb63\"}},\"author_association\":\"OWNER\",\"auto_merge\":null,\"assignee\":null,\"active_lock_reason\":null,\"merged\":false,\"mergeable\":true,\"rebaseable\":true,\"mergeable_state\":\"clean\",\"merged_by\":null,\"comments\":0,\"review_comments\":0,\"maintainer_can_modify\":false,\"commits\":2,\"additions\":11,\"deletions\":0,\"changed_files\":2}",
+      "stderr": ""
+    },
+    "ci": {
+      "args": [
+        "gh",
+        "api",
+        "repos/charmeee/loop-test/commits/483952dd3f3592cd21219da45dda151e58a0cb63/check-runs"
+      ],
+      "code": 0,
+      "stdout": "{\"total_count\":2,\"check_runs\":[{\"id\":112058987269,\"name\":\"verify\",\"node_id\":\"CR_kwDOU9WZbc8AAAAaFzxzBQ\",\"head_sha\":\"483952dd3f3592cd21219da45dda151e58a0cb63\",\"external_id\":\"1c9b0427-eafb-595d-89ab-3a53d1565e23\",\"url\":\"https://api.github.com/repos/charmeee/loop-test/check-runs/112058987269\",\"html_url\":\"https://github.com/charmeee/loop-test/actions/runs/37398164804/job/112058987269\",\"details_url\":\"https://github.com/charmeee/loop-test/actions/runs/37398164804/job/112058987269\",\"status\":\"completed\",\"conclusion\":\"success\",\"started_at\":\"2026-10-06T01:14:41Z\",\"completed_at\":\"2026-10-06T01:14:50Z\",\"output\":{\"title\":null,\"summary\":null,\"text\":null,\"annotations_count\":2,\"annotations_url\":\"https://api.github.com/repos/charmeee/loop-test/check-runs/112058987269/annotations\"},\"check_suite\":{\"id\":101299924443},\"app\":{\"id\":15368,\"client_id\":\"Iv1.05c79e9ad1f6bdfa\",\"slug\":\"github-actions\",\"node_id\":\"MDM6QXBwMTUzNjg=\",\"owner\":{\"login\":\"github\",\"id\":9919,\"node_id\":\"MDEyOk9yZ2FuaXphdGlvbjk5MTk=\",\"avatar_url\":\"https://avatars.githubusercontent.com/u/9919?v=4\",\"gravatar_id\":\"\",\"url\":\"https://api.github.com/users/github\",\"html_url\":\"https://github.com/github\",\"followers_url\":\"https://api.github.com/users/github/followers\",\"following_url\":\"https://api.github.com/users/github/following{/other_user}\",\"gists_url\":\"https://api.github.com/users/github/gists{/gist_id}\",\"starred_url\":\"https://api.github.com/users/github/starred{/owner}{/repo}\",\"subscriptions_url\":\"https://api.github.com/users/github/subscriptions\",\"organizations_url\":\"https://api.github.com/users/github/orgs\",\"repos_url\":\"https://api.github.com/users/github/repos\",\"events_url\":\"https://api.github.com/users/github/events{/privacy}\",\"received_events_url\":\"https://api.github.com/users/github/received_events\",\"type\":\"Organization\",\"user_view_type\":\"public\",\"site_admin\":false},\"name\":\"GitHub Actions\",\"description\":\"Automate your workflow from idea to production\",\"external_url\":\"https://help.github.com/en/actions\",\"html_url\":\"https://github.com/apps/github-actions\",\"created_at\":\"2018-07-30T09:30:17Z\",\"updated_at\":\"2026-06-18T16:17:48Z\",\"permissions\":{\"actions\":\"write\",\"administration\":\"read\",\"artifact_metadata\":\"write\",\"attestations\":\"write\",\"checks\":\"write\",\"code_quality\":\"write\",\"contents\":\"write\",\"copilot_requests\":\"write\",\"deployments\":\"write\",\"discussions\":\"write\",\"drives\":\"write\",\"issues\":\"write\",\"merge_queues\":\"write\",\"metadata\":\"read\",\"models\":\"read\",\"packages\":\"write\",\"pages\":\"write\",\"pull_requests\":\"write\",\"repository_hooks\":\"write\",\"repository_projects\":\"write\",\"security_events\":\"write\",\"statuses\":\"write\",\"vulnerability_alerts\":\"read\"},\"events\":[\"branch_protection_rule\",\"check_run\",\"check_suite\",\"create\",\"delete\",\"deployment\",\"deployment_status\",\"discussion\",\"discussion_comment\",\"fork\",\"gollum\",\"issues\",\"issue_comment\",\"label\",\"merge_group\",\"milestone\",\"page_build\",\"public\",\"pull_request\",\"pull_request_review\",\"pull_request_review_comment\",\"push\",\"registry_package\",\"release\",\"repository\",\"repository_dispatch\",\"status\",\"watch\",\"workflow_dispatch\",\"workflow_run\"]},\"pull_requests\":[{\"url\":\"https://api.github.com/repos/charmeee/loop-test/pulls/2\",\"id\":4752796979,\"number\":2,\"head\":{\"ref\":\"feature/statistics\",\"sha\":\"483952dd3f3592cd21219da45dda151e58a0cb63\",\"repo\":{\"id\":1406507373,\"url\":\"https://api.github.com/repos/charmeee/loop-test\",\"name\":\"loop-test\"}},\"base\":{\"ref\":\"main\",\"sha\":\"1c1dd24767af399a64bfd14237ad6977cb3e0058\",\"repo\":{\"id\":1406507373,\"url\":\"https://api.github.com/repos/charmeee/loop-test\",\"name\":\"loop-test\"}}}]},{\"id\":112058975712,\"name\":\"verify\",\"node_id\":\"CR_kwDOU9WZbc8AAAAaFzxF4A\",\"head_sha\":\"483952dd3f3592cd21219da45dda151e58a0cb63\",\"external_id\":\"4803e298-e1e7-5ce0-a884-f0979601b209\",\"url\":\"https://api.github.com/repos/charmeee/loop-test/check-runs/112058975712\",\"html_url\":\"https://github.com/charmeee/loop-test/actions/runs/37398161279/job/112058975712\",\"details_url\":\"https://github.com/charmeee/loop-test/actions/runs/37398161279/job/112058975712\",\"status\":\"completed\",\"conclusion\":\"success\",\"started_at\":\"2026-10-06T01:14:37Z\",\"completed_at\":\"2026-10-06T01:14:46Z\",\"output\":{\"title\":null,\"summary\":null,\"text\":null,\"annotations_count\":2,\"annotations_url\":\"https://api.github.com/repos/charmeee/loop-test/check-runs/112058975712/annotations\"},\"check_suite\":{\"id\":101299915297},\"app\":{\"id\":15368,\"client_id\":\"Iv1.05c79e9ad1f6bdfa\",\"slug\":\"github-actions\",\"node_id\":\"MDM6QXBwMTUzNjg=\",\"owner\":{\"login\":\"github\",\"id\":9919,\"node_id\":\"MDEyOk9yZ2FuaXphdGlvbjk5MTk=\",\"avatar_url\":\"https://avatars.githubusercontent.com/u/9919?v=4\",\"gravatar_id\":\"\",\"url\":\"https://api.github.com/users/github\",\"html_url\":\"https://github.com/github\",\"followers_url\":\"https://api.github.com/users/github/followers\",\"following_url\":\"https://api.github.com/users/github/following{/other_user}\",\"gists_url\":\"https://api.github.com/users/github/gists{/gist_id}\",\"starred_url\":\"https://api.github.com/users/github/starred{/owner}{/repo}\",\"subscriptions_url\":\"https://api.github.com/users/github/subscriptions\",\"organizations_url\":\"https://api.github.com/users/github/orgs\",\"repos_url\":\"https://api.github.com/users/github/repos\",\"events_url\":\"https://api.github.com/users/github/events{/privacy}\",\"received_events_url\":\"https://api.github.com/users/github/received_events\",\"type\":\"Organization\",\"user_view_type\":\"public\",\"site_admin\":false},\"name\":\"GitHub Actions\",\"description\":\"Automate your workflow from idea to production\",\"external_url\":\"https://help.github.com/en/actions\",\"html_url\":\"https://github.com/apps/github-actions\",\"created_at\":\"2018-07-30T09:30:17Z\",\"updated_at\":\"2026-06-18T16:17:48Z\",\"permissions\":{\"actions\":\"write\",\"administration\":\"read\",\"artifact_metadata\":\"write\",\"attestations\":\"write\",\"checks\":\"write\",\"code_quality\":\"write\",\"contents\":\"write\",\"copilot_requests\":\"write\",\"deployments\":\"write\",\"discussions\":\"write\",\"drives\":\"write\",\"issues\":\"write\",\"merge_queues\":\"write\",\"metadata\":\"read\",\"models\":\"read\",\"packages\":\"write\",\"pages\":\"write\",\"pull_requests\":\"write\",\"repository_hooks\":\"write\",\"repository_projects\":\"write\",\"security_events\":\"write\",\"statuses\":\"write\",\"vulnerability_alerts\":\"read\"},\"events\":[\"branch_protection_rule\",\"check_run\",\"check_suite\",\"create\",\"delete\",\"deployment\",\"deployment_status\",\"discussion\",\"discussion_comment\",\"fork\",\"gollum\",\"issues\",\"issue_comment\",\"label\",\"merge_group\",\"milestone\",\"page_build\",\"public\",\"pull_request\",\"pull_request_review\",\"pull_request_review_comment\",\"push\",\"registry_package\",\"release\",\"repository\",\"repository_dispatch\",\"status\",\"watch\",\"workflow_dispatch\",\"workflow_run\"]},\"pull_requests\":[{\"url\":\"https://api.github.com/repos/charmeee/loop-test/pulls/2\",\"id\":4752796979,\"number\":2,\"head\":{\"ref\":\"feature/statistics\",\"sha\":\"483952dd3f3592cd21219da45dda151e58a0cb63\",\"repo\":{\"id\":1406507373,\"url\":\"https://api.github.com/repos/charmeee/loop-test\",\"name\":\"loop-test\"}},\"base\":{\"ref\":\"main\",\"sha\":\"1c1dd24767af399a64bfd14237ad6977cb3e0058\",\"repo\":{\"id\":1406507373,\"url\":\"https://api.github.com/repos/charmeee/loop-test\",\"name\":\"loop-test\"}}}]}]}",
+      "stderr": ""
+    },
+    "statuses": {
+      "args": [
+        "gh",
+        "api",
+        "repos/charmeee/loop-test/commits/483952dd3f3592cd21219da45dda151e58a0cb63/status"
+      ],
+      "code": 0,
+      "stdout": "{\"state\":\"pending\",\"statuses\":[],\"sha\":\"483952dd3f3592cd21219da45dda151e58a0cb63\",\"total_count\":0,\"repository\":{\"id\":1406507373,\"node_id\":\"R_kgDOU9WZbQ\",\"name\":\"loop-test\",\"full_name\":\"charmeee/loop-test\",\"private\":false,\"owner\":{\"login\":\"charmeee\",\"id\":75278669,\"node_id\":\"MDQ6VXNlcjc1Mjc4NjY5\",\"avatar_url\":\"https://avatars.githubusercontent.com/u/75278669?v=4\",\"gravatar_id\":\"\",\"url\":\"https://api.github.com/users/charmeee\",\"html_url\":\"https://github.com/charmeee\",\"followers_url\":\"https://api.github.com/users/charmeee/followers\",\"following_url\":\"https://api.github.com/users/charmeee/following{/other_user}\",\"gists_url\":\"https://api.github.com/users/charmeee/gists{/gist_id}\",\"starred_url\":\"https://api.github.com/users/charmeee/starred{/owner}{/repo}\",\"subscriptions_url\":\"https://api.github.com/users/charmeee/subscriptions\",\"organizations_url\":\"https://api.github.com/users/charmeee/orgs\",\"repos_url\":\"https://api.github.com/users/charmeee/repos\",\"events_url\":\"https://api.github.com/users/charmeee/events{/privacy}\",\"received_events_url\":\"https://api.github.com/users/charmeee/received_events\",\"type\":\"User\",\"user_view_type\":\"public\",\"site_admin\":false},\"html_url\":\"https://github.com/charmeee/loop-test\",\"description\":null,\"fork\":false,\"url\":\"https://api.github.com/repos/charmeee/loop-test\",\"forks_url\":\"https://api.github.com/repos/charmeee/loop-test/forks\",\"keys_url\":\"https://api.github.com/repos/charmeee/loop-test/keys{/key_id}\",\"collaborators_url\":\"https://api.github.com/repos/charmeee/loop-test/collaborators{/collaborator}\",\"teams_url\":\"https://api.github.com/repos/charmeee/loop-test/teams\",\"hooks_url\":\"https://api.github.com/repos/charmeee/loop-test/hooks\",\"issue_events_url\":\"https://api.github.com/repos/charmeee/loop-test/issues/events{/number}\",\"events_url\":\"https://api.github.com/repos/charmeee/loop-test/events\",\"assignees_url\":\"https://api.github.com/repos/charmeee/loop-test/assignees{/user}\",\"branches_url\":\"https://api.github.com/repos/charmeee/loop-test/branches{/branch}\",\"tags_url\":\"https://api.github.com/repos/charmeee/loop-test/tags\",\"blobs_url\":\"https://api.github.com/repos/charmeee/loop-test/git/blobs{/sha}\",\"git_tags_url\":\"https://api.github.com/repos/charmeee/loop-test/git/tags{/sha}\",\"git_refs_url\":\"https://api.github.com/repos/charmeee/loop-test/git/refs{/sha}\",\"trees_url\":\"https://api.github.com/repos/charmeee/loop-test/git/trees{/sha}\",\"statuses_url\":\"https://api.github.com/repos/charmeee/loop-test/statuses/{sha}\",\"languages_url\":\"https://api.github.com/repos/charmeee/loop-test/languages\",\"stargazers_url\":\"https://api.github.com/repos/charmeee/loop-test/stargazers\",\"contributors_url\":\"https://api.github.com/repos/charmeee/loop-test/contributors\",\"subscribers_url\":\"https://api.github.com/repos/charmeee/loop-test/subscribers\",\"subscription_url\":\"https://api.github.com/repos/charmeee/loop-test/subscription\",\"commits_url\":\"https://api.github.com/repos/charmeee/loop-test/commits{/sha}\",\"git_commits_url\":\"https://api.github.com/repos/charmeee/loop-test/git/commits{/sha}\",\"comments_url\":\"https://api.github.com/repos/charmeee/loop-test/comments{/number}\",\"issue_comment_url\":\"https://api.github.com/repos/charmeee/loop-test/issues/comments{/number}\",\"contents_url\":\"https://api.github.com/repos/charmeee/loop-test/contents/{+path}\",\"compare_url\":\"https://api.github.com/repos/charmeee/loop-test/compare/{base}...{head}\",\"merges_url\":\"https://api.github.com/repos/charmeee/loop-test/merges\",\"archive_url\":\"https://api.github.com/repos/charmeee/loop-test/{archive_format}{/ref}\",\"downloads_url\":\"https://api.github.com/repos/charmeee/loop-test/downloads\",\"issues_url\":\"https://api.github.com/repos/charmeee/loop-test/issues{/number}\",\"pulls_url\":\"https://api.github.com/repos/charmeee/loop-test/pulls{/number}\",\"milestones_url\":\"https://api.github.com/repos/charmeee/loop-test/milestones{/number}\",\"notifications_url\":\"https://api.github.com/repos/charmeee/loop-test/notifications{?since,all,participating}\",\"labels_url\":\"https://api.github.com/repos/charmeee/loop-test/labels{/name}\",\"releases_url\":\"https://api.github.com/repos/charmeee/loop-test/releases{/id}\",\"deployments_url\":\"https://api.github.com/repos/charmeee/loop-test/deployments\"},\"commit_url\":\"https://api.github.com/repos/charmeee/loop-test/commits/483952dd3f3592cd21219da45dda151e58a0cb63\",\"url\":\"https://api.github.com/repos/charmeee/loop-test/commits/483952dd3f3592cd21219da45dda151e58a0cb63/status\"}",
+      "stderr": ""
+    },
+    "hashes": {
+      "tests/app.test.mjs": [
+        "fadefb8ea866d27ff3d9c9fe0c74648a120487e338c71d740b83bb774e46c056",
+        "fadefb8ea866d27ff3d9c9fe0c74648a120487e338c71d740b83bb774e46c056",
+        "fadefb8ea866d27ff3d9c9fe0c74648a120487e338c71d740b83bb774e46c056"
+      ],
+      "tests/loop.test.mjs": [
+        "5adeab2ab74153a7c21f077c03b048dc3bc6ae27366470fef614a5bb5905bb34",
+        "5adeab2ab74153a7c21f077c03b048dc3bc6ae27366470fef614a5bb5905bb34",
+        "5adeab2ab74153a7c21f077c03b048dc3bc6ae27366470fef614a5bb5905bb34"
+      ],
+      "tests/statistics.test.mjs": [
+        "c3bf3b9aea345057b530b1f706a067f1cfdc4b5a5c61cd856673c3a9fb5f84da",
+        "c3bf3b9aea345057b530b1f706a067f1cfdc4b5a5c61cd856673c3a9fb5f84da",
+        "c3bf3b9aea345057b530b1f706a067f1cfdc4b5a5c61cd856673c3a9fb5f84da"
+      ]
+    },
+    "testsImmutable": true,
+    "gate": {
+      "args": [
+        "/Users/jeonminji/company/loop-engineer-test/node_modules/.bin/loop-gate",
+        "check",
+        "--action",
+        "auto-merge",
+        "--paths",
+        "src/statistics.mjs",
+        "--gate-file",
+        "/Users/jeonminji/company/loop-engineer-test/gate.yaml",
+        "--json"
+      ],
+      "code": 0,
+      "stdout": "{\n  \"allowed\": true,\n  \"trigger\": \"ok\",\n  \"reason\": \"Within policy \u2014 cleared to proceed.\",\n  \"matchedPaths\": []\n}\n",
+      "stderr": ""
+    },
+    "checks": [
+      {
+        "args": [
+          "npm",
+          "ci"
+        ],
+        "code": 0,
+        "stdout": "\nadded 12 packages, and audited 13 packages in 667ms\n\n2 packages are looking for funding\n  run `npm fund` for details\n\nfound 0 vulnerabilities\n",
+        "stderr": ""
+      },
+      {
+        "args": [
+          "npm",
+          "test"
+        ],
+        "code": 0,
+        "stdout": "\n> loop-engineer-test@1.0.0 test\n> node --test tests/*.test.mjs\n\nTAP version 13\n# Subtest: money rounds ordinary values\nok 1 - money rounds ordinary values\n  ---\n  duration_ms: 0.41675\n  ...\n# Subtest: money rejects non-finite values\nok 2 - money rejects non-finite values\n  ---\n  duration_ms: 0.229292\n  ...\n# Subtest: fresh ledger permits a report-only run\nok 3 - fresh ledger permits a report-only run\n  ---\n  duration_ms: 194.780417\n  ...\n# Subtest: repeated failure trips circuit breaker\nok 4 - repeated failure trips circuit breaker\n  ---\n  duration_ms: 42.20175\n  ...\n# Subtest: token cap trips circuit breaker\nok 5 - token cap trips circuit breaker\n  ---\n  duration_ms: 35.065041\n  ...\n# Subtest: sensitive paths require escalation\nok 6 - sensitive paths require escalation\n  ---\n  duration_ms: 195.87775\n  ...\n# Subtest: L3 policy prevents documentation auto-merge\nok 7 - L3 policy prevents documentation auto-merge\n  ---\n  duration_ms: 64.247916\n  ...\n# Subtest: non-sensitive changes can be reviewed for a manual commit\nok 8 - non-sensitive changes can be reviewed for a manual commit\n  ---\n  duration_ms: 66.6555\n  ...\n# Subtest: kill switch stops before invoking any tools\nok 9 - kill switch stops before invoking any tools\n  ---\n  duration_ms: 43.505667\n  ...\n# Subtest: L3 allows implementation repairs only\nok 10 - L3 allows implementation repairs only\n  ---\n  duration_ms: 62.55425\n  ...\n# Subtest: L3 rejects test changes\nok 11 - L3 rejects test changes\n  ---\n  duration_ms: 82.868709\n  ...\n# Subtest: statistics calculates count total and average\nok 12 - statistics calculates count total and average\n  ---\n  duration_ms: 2.217167\n  ...\n# Subtest: statistics handles empty input\nok 13 - statistics handles empty input\n  ---\n  duration_ms: 0.091209\n  ...\n# Subtest: statistics rejects non-finite values\nok 14 - statistics rejects non-finite values\n  ---\n  duration_ms: 0.633542\n  ...\n1..14\n# tests 14\n# suites 0\n# pass 14\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 860.054958\n",
+        "stderr": ""
+      },
+      {
+        "args": [
+          "npm",
+          "run",
+          "lint"
+        ],
+        "code": 0,
+        "stdout": "\n> loop-engineer-test@1.0.0 lint\n> node --check scripts/check.mjs && node --check scripts/sync.mjs && node --check src/money.mjs\n\n",
+        "stderr": ""
+      },
+      {
+        "args": [
+          "npm",
+          "run",
+          "loop:check"
+        ],
+        "code": 0,
+        "stdout": "\n> loop-engineer-test@1.0.0 loop:check\n> node scripts/check.mjs\n\nCONTINUE [ok] \u2014 Within limits \u2014 cleared to continue.\n\nLoop doctor \u2014 /Users/jeonminji/company/loop-l3-worktrees/statistics\n\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\nReady:   100/100 L3\n         Strong loop readiness \u2014 good candidate for L3 with explicit gates.\nSync:    n/a\nFiles:   state=STATE.md  LOOP.md=yes  budget=yes  run-log=yes  gate=yes\nStatus:  HEALTHY (exit 0)\n\nTop next actions:\n  1. Copy or create docs/safety.md (denylists, auto-merge policy, MCP scopes)\n  2. Add patterns/registry.yaml following the existing format\n  3. Declare allowed-tools in SKILL.md frontmatter, or document tool/MCP scopes in docs/safety.md (least privilege per role)\n\nNotes:\n  \u00b7 Could not parse loop-sync JSON output\n\nWeek one: report only. Old packages still work: loop-init, loop-audit, \u2026\nDocs: https://github.com/cobusgreyling/loop-engineering/blob/main/docs/QUICKSTART.md\n\n{\n  \"score\": 90,\n  \"level\": \"healthy\",\n  \"issues\": [\n    {\n      \"type\": \"inconsistent\",\n      \"file\": \"STATE.md \u2194 LOOP.md\",\n      \"message\": \"Low structural similarity between STATE.md and LOOP.md\",\n      \"severity\": \"warning\",\n      \"suggestion\": \"Review both files for consistency\"\n    }\n  ],\n  \"suggestions\": [\n    \"Review STATE.md and LOOP.md for consistency\"\n  ],\n  \"timestamp\": \"2026-10-06T01:21:02.001Z\"\n}\n",
+        "stderr": ""
+      }
+    ],
+    "syntax": [
+      {
+        "args": [
+          "node",
+          "--check",
+          "src/statistics.mjs"
+        ],
+        "code": 0,
+        "stdout": "",
+        "stderr": ""
+      }
+    ],
+    "postStatus": {
+      "args": [
+        "git",
+        "status",
+        "--porcelain"
+      ],
+      "code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    "finalRemote": "483952dd3f3592cd21219da45dda151e58a0cb63\trefs/heads/feature/statistics\n"
+  },
+  "3": {
+    "sha": "a81eae9f8905265d0a4308e677a28aa0637b7453",
+    "head": {
+      "args": [
+        "git",
+        "rev-parse",
+        "HEAD"
+      ],
+      "code": 0,
+      "stdout": "a81eae9f8905265d0a4308e677a28aa0637b7453\n",
+      "stderr": ""
+    },
+    "status": {
+      "args": [
+        "git",
+        "status",
+        "--porcelain"
+      ],
+      "code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    "remote": {
+      "args": [
+        "git",
+        "ls-remote",
+        "origin",
+        "refs/heads/fix/money-rounding"
+      ],
+      "code": 0,
+      "stdout": "a81eae9f8905265d0a4308e677a28aa0637b7453\trefs/heads/fix/money-rounding\n",
+      "stderr": ""
+    },
+    "diff": {
+      "args": [
+        "git",
+        "diff",
+        "--name-only",
+        "5864210ef0201985d44594338efbfcc1f1c21a4f",
+        "a81eae9f8905265d0a4308e677a28aa0637b7453"
+      ],
+      "code": 0,
+      "stdout": "src/money.mjs\n",
+      "stderr": ""
+    },
+    "diffCheck": {
+      "args": [
+        "git",
+        "diff",
+        "--check",
+        "5864210ef0201985d44594338efbfcc1f1c21a4f",
+        "a81eae9f8905265d0a4308e677a28aa0637b7453"
+      ],
+      "code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    "pr": {
+      "args": [
+        "gh",
+        "api",
+        "repos/charmeee/loop-test/pulls/3"
+      ],
+      "code": 0,
+      "stdout": "{\"url\":\"https://api.github.com/repos/charmeee/loop-test/pulls/3\",\"id\":4752797391,\"node_id\":\"PR_kwDOU9WZbc8AAAABG0nuzw\",\"html_url\":\"https://github.com/charmeee/loop-test/pull/3\",\"diff_url\":\"https://github.com/charmeee/loop-test/pull/3.diff\",\"patch_url\":\"https://github.com/charmeee/loop-test/pull/3.patch\",\"issue_url\":\"https://api.github.com/repos/charmeee/loop-test/issues/3\",\"number\":3,\"state\":\"open\",\"locked\":false,\"title\":\"fix: \uae08\uc561 \ubc18\uc62c\ub9bc \ubcf4\uc815\",\"user\":{\"login\":\"charmeee\",\"id\":75278669,\"node_id\":\"MDQ6VXNlcjc1Mjc4NjY5\",\"avatar_url\":\"https://avatars.githubusercontent.com/u/75278669?v=4\",\"gravatar_id\":\"\",\"url\":\"https://api.github.com/users/charmeee\",\"html_url\":\"https://github.com/charmeee\",\"followers_url\":\"https://api.github.com/users/charmeee/followers\",\"following_url\":\"https://api.github.com/users/charmeee/following{/other_user}\",\"gists_url\":\"https://api.github.com/users/charmeee/gists{/gist_id}\",\"starred_url\":\"https://api.github.com/users/charmeee/starred{/owner}{/repo}\",\"subscriptions_url\":\"https://api.github.com/users/charmeee/subscriptions\",\"organizations_url\":\"https://api.github.com/users/charmeee/orgs\",\"repos_url\":\"https://api.github.com/users/charmeee/repos\",\"events_url\":\"https://api.github.com/users/charmeee/events{/privacy}\",\"received_events_url\":\"https://api.github.com/users/charmeee/received_events\",\"type\":\"User\",\"user_view_type\":\"public\",\"site_admin\":false},\"body\":\"1.005 \uac19\uc740 \uae08\uc561\uc5d0\uc11c \ubd80\ub3d9\uc18c\uc218\uc810 \uc624\ucc28\ub85c \ubc18 \uc13c\ud2b8 \ubc18\uc62c\ub9bc\uc774 \uc798\ubabb\ub418\ub358 \ubb38\uc81c\ub97c \ubcf4\uc815\ud569\ub2c8\ub2e4. \uc591\uc218\u00b7\uc74c\uc218 \ubaa8\ub450 \uc808\ub313\uac12 \uae30\uc900\uc73c\ub85c \ubc18\uc62c\ub9bc\ud55c \ub4a4 \ubd80\ud638\ub97c \ubcf5\uc6d0\ud558\uace0 0\uc744 \uc815\uaddc\ud654\ud569\ub2c8\ub2e4.\\n\\n\uac80\uc99d: GitHub Actions\uc640 \ub85c\uceec \ud14c\uc2a4\ud2b8 12\uac1c \ud1b5\uacfc. \uae30\uc874 \ud68c\uadc0 \ud14c\uc2a4\ud2b8\ub97c \uc720\uc9c0\ud558\uace0 src/money.mjs\ub9cc \uc218\uc815\ud588\uc2b5\ub2c8\ub2e4. \ubcc4\ub3c4 checker\uac00 \uc815\ud655\ud55c \ucee4\ubc0b\uc744 \uac80\uc99d\ud55c \ub4a4 L3 \uac8c\uc774\ud2b8\uac00 \uba38\uc9c0\ud569\ub2c8\ub2e4.\\n\",\"created_at\":\"2026-10-06T01:12:24Z\",\"updated_at\":\"2026-10-06T01:18:55Z\",\"closed_at\":null,\"merged_at\":null,\"merge_commit_sha\":\"26aedcab364ae80d0a0e0cd8f2db942acc827ab9\",\"assignees\":[],\"requested_reviewers\":[],\"requested_teams\":[],\"labels\":[],\"milestone\":null,\"draft\":false,\"commits_url\":\"https://api.github.com/repos/charmeee/loop-test/pulls/3/commits\",\"review_comments_url\":\"https://api.github.com/repos/charmeee/loop-test/pulls/3/comments\",\"review_comment_url\":\"https://api.github.com/repos/charmeee/loop-test/pulls/comments{/number}\",\"comments_url\":\"https://api.github.com/repos/charmeee/loop-test/issues/3/comments\",\"statuses_url\":\"https://api.github.com/repos/charmeee/loop-test/statuses/a81eae9f8905265d0a4308e677a28aa0637b7453\",\"head\":{\"label\":\"charmeee:fix/money-rounding\",\"ref\":\"fix/money-rounding\",\"sha\":\"a81eae9f8905265d0a4308e677a28aa0637b7453\",\"user\":{\"login\":\"charmeee\",\"id\":75278669,\"node_id\":\"MDQ6VXNlcjc1Mjc4NjY5\",\"avatar_url\":\"https://avatars.githubusercontent.com/u/75278669?v=4\",\"gravatar_id\":\"\",\"url\":\"https://api.github.com/users/charmeee\",\"html_url\":\"https://github.com/charmeee\",\"followers_url\":\"https://api.github.com/users/charmeee/followers\",\"following_url\":\"https://api.github.com/users/charmeee/following{/other_user}\",\"gists_url\":\"https://api.github.com/users/charmeee/gists{/gist_id}\",\"starred_url\":\"https://api.github.com/users/charmeee/starred{/owner}{/repo}\",\"subscriptions_url\":\"https://api.github.com/users/charmeee/subscriptions\",\"organizations_url\":\"https://api.github.com/users/charmeee/orgs\",\"repos_url\":\"https://api.github.com/users/charmeee/repos\",\"events_url\":\"https://api.github.com/users/charmeee/events{/privacy}\",\"received_events_url\":\"https://api.github.com/users/charmeee/received_events\",\"type\":\"User\",\"user_view_type\":\"public\",\"site_admin\":false},\"repo\":{\"id\":1406507373,\"node_id\":\"R_kgDOU9WZbQ\",\"name\":\"loop-test\",\"full_name\":\"charmeee/loop-test\",\"private\":false,\"owner\":{\"login\":\"charmeee\",\"id\":75278669,\"node_id\":\"MDQ6VXNlcjc1Mjc4NjY5\",\"avatar_url\":\"https://avatars.githubusercontent.com/u/75278669?v=4\",\"gravatar_id\":\"\",\"url\":\"https://api.github.com/users/charmeee\",\"html_url\":\"https://github.com/charmeee\",\"followers_url\":\"https://api.github.com/users/charmeee/followers\",\"following_url\":\"https://api.github.com/users/charmeee/following{/other_user}\",\"gists_url\":\"https://api.github.com/users/charmeee/gists{/gist_id}\",\"starred_url\":\"https://api.github.com/users/charmeee/starred{/owner}{/repo}\",\"subscriptions_url\":\"https://api.github.com/users/charmeee/subscriptions\",\"organizations_url\":\"https://api.github.com/users/charmeee/orgs\",\"repos_url\":\"https://api.github.com/users/charmeee/repos\",\"events_url\":\"https://api.github.com/users/charmeee/events{/privacy}\",\"received_events_url\":\"https://api.github.com/users/charmeee/received_events\",\"type\":\"User\",\"user_view_type\":\"public\",\"site_admin\":false},\"html_url\":\"https://github.com/charmeee/loop-test\",\"description\":null,\"fork\":false,\"url\":\"https://api.github.com/repos/charmeee/loop-test\",\"forks_url\":\"https://api.github.com/repos/charmeee/loop-test/forks\",\"keys_url\":\"https://api.github.com/repos/charmeee/loop-test/keys{/key_id}\",\"collaborators_url\":\"https://api.github.com/repos/charmeee/loop-test/collaborators{/collaborator}\",\"teams_url\":\"https://api.github.com/repos/charmeee/loop-test/teams\",\"hooks_url\":\"https://api.github.com/repos/charmeee/loop-test/hooks\",\"issue_events_url\":\"https://api.github.com/repos/charmeee/loop-test/issues/events{/number}\",\"events_url\":\"https://api.github.com/repos/charmeee/loop-test/events\",\"assignees_url\":\"https://api.github.com/repos/charmeee/loop-test/assignees{/user}\",\"branches_url\":\"https://api.github.com/repos/charmeee/loop-test/branches{/branch}\",\"tags_url\":\"https://api.github.com/repos/charmeee/loop-test/tags\",\"blobs_url\":\"https://api.github.com/repos/charmeee/loop-test/git/blobs{/sha}\",\"git_tags_url\":\"https://api.github.com/repos/charmeee/loop-test/git/tags{/sha}\",\"git_refs_url\":\"https://api.github.com/repos/charmeee/loop-test/git/refs{/sha}\",\"trees_url\":\"https://api.github.com/repos/charmeee/loop-test/git/trees{/sha}\",\"statuses_url\":\"https://api.github.com/repos/charmeee/loop-test/statuses/{sha}\",\"languages_url\":\"https://api.github.com/repos/charmeee/loop-test/languages\",\"stargazers_url\":\"https://api.github.com/repos/charmeee/loop-test/stargazers\",\"contributors_url\":\"https://api.github.com/repos/charmeee/loop-test/contributors\",\"subscribers_url\":\"https://api.github.com/repos/charmeee/loop-test/subscribers\",\"subscription_url\":\"https://api.github.com/repos/charmeee/loop-test/subscription\",\"commits_url\":\"https://api.github.com/repos/charmeee/loop-test/commits{/sha}\",\"git_commits_url\":\"https://api.github.com/repos/charmeee/loop-test/git/commits{/sha}\",\"comments_url\":\"https://api.github.com/repos/charmeee/loop-test/comments{/number}\",\"issue_comment_url\":\"https://api.github.com/repos/charmeee/loop-test/issues/comments{/number}\",\"contents_url\":\"https://api.github.com/repos/charmeee/loop-test/contents/{+path}\",\"compare_url\":\"https://api.github.com/repos/charmeee/loop-test/compare/{base}...{head}\",\"merges_url\":\"https://api.github.com/repos/charmeee/loop-test/merges\",\"archive_url\":\"https://api.github.com/repos/charmeee/loop-test/{archive_format}{/ref}\",\"downloads_url\":\"https://api.github.com/repos/charmeee/loop-test/downloads\",\"issues_url\":\"https://api.github.com/repos/charmeee/loop-test/issues{/number}\",\"pulls_url\":\"https://api.github.com/repos/charmeee/loop-test/pulls{/number}\",\"milestones_url\":\"https://api.github.com/repos/charmeee/loop-test/milestones{/number}\",\"notifications_url\":\"https://api.github.com/repos/charmeee/loop-test/notifications{?since,all,participating}\",\"labels_url\":\"https://api.github.com/repos/charmeee/loop-test/labels{/name}\",\"releases_url\":\"https://api.github.com/repos/charmeee/loop-test/releases{/id}\",\"deployments_url\":\"https://api.github.com/repos/charmeee/loop-test/deployments\",\"created_at\":\"2026-10-06T00:12:31Z\",\"updated_at\":\"2026-10-06T01:12:07Z\",\"pushed_at\":\"2026-10-06T01:18:54Z\",\"git_url\":\"git://github.com/charmeee/loop-test.git\",\"ssh_url\":\"git@github.com:charmeee/loop-test.git\",\"clone_url\":\"https://github.com/charmeee/loop-test.git\",\"svn_url\":\"https://github.com/charmeee/loop-test\",\"homepage\":null,\"size\":0,\"stargazers_count\":0,\"watchers_count\":0,\"language\":\"JavaScript\",\"has_issues\":true,\"has_projects\":true,\"has_downloads\":false,\"has_wiki\":true,\"has_pages\":false,\"has_discussions\":false,\"forks_count\":0,\"mirror_url\":null,\"archived\":false,\"disabled\":false,\"open_issues_count\":3,\"license\":null,\"allow_forking\":true,\"is_template\":false,\"web_commit_signoff_required\":false,\"has_pull_requests\":true,\"pull_request_creation_policy\":\"all\",\"topics\":[],\"visibility\":\"public\",\"forks\":0,\"open_issues\":3,\"watchers\":0,\"default_branch\":\"main\"}},\"base\":{\"label\":\"charmeee:main\",\"ref\":\"main\",\"sha\":\"1c1dd24767af399a64bfd14237ad6977cb3e0058\",\"user\":{\"login\":\"charmeee\",\"id\":75278669,\"node_id\":\"MDQ6VXNlcjc1Mjc4NjY5\",\"avatar_url\":\"https://avatars.githubusercontent.com/u/75278669?v=4\",\"gravatar_id\":\"\",\"url\":\"https://api.github.com/users/charmeee\",\"html_url\":\"https://github.com/charmeee\",\"followers_url\":\"https://api.github.com/users/charmeee/followers\",\"following_url\":\"https://api.github.com/users/charmeee/following{/other_user}\",\"gists_url\":\"https://api.github.com/users/charmeee/gists{/gist_id}\",\"starred_url\":\"https://api.github.com/users/charmeee/starred{/owner}{/repo}\",\"subscriptions_url\":\"https://api.github.com/users/charmeee/subscriptions\",\"organizations_url\":\"https://api.github.com/users/charmeee/orgs\",\"repos_url\":\"https://api.github.com/users/charmeee/repos\",\"events_url\":\"https://api.github.com/users/charmeee/events{/privacy}\",\"received_events_url\":\"https://api.github.com/users/charmeee/received_events\",\"type\":\"User\",\"user_view_type\":\"public\",\"site_admin\":false},\"repo\":{\"id\":1406507373,\"node_id\":\"R_kgDOU9WZbQ\",\"name\":\"loop-test\",\"full_name\":\"charmeee/loop-test\",\"private\":false,\"owner\":{\"login\":\"charmeee\",\"id\":75278669,\"node_id\":\"MDQ6VXNlcjc1Mjc4NjY5\",\"avatar_url\":\"https://avatars.githubusercontent.com/u/75278669?v=4\",\"gravatar_id\":\"\",\"url\":\"https://api.github.com/users/charmeee\",\"html_url\":\"https://github.com/charmeee\",\"followers_url\":\"https://api.github.com/users/charmeee/followers\",\"following_url\":\"https://api.github.com/users/charmeee/following{/other_user}\",\"gists_url\":\"https://api.github.com/users/charmeee/gists{/gist_id}\",\"starred_url\":\"https://api.github.com/users/charmeee/starred{/owner}{/repo}\",\"subscriptions_url\":\"https://api.github.com/users/charmeee/subscriptions\",\"organizations_url\":\"https://api.github.com/users/charmeee/orgs\",\"repos_url\":\"https://api.github.com/users/charmeee/repos\",\"events_url\":\"https://api.github.com/users/charmeee/events{/privacy}\",\"received_events_url\":\"https://api.github.com/users/charmeee/received_events\",\"type\":\"User\",\"user_view_type\":\"public\",\"site_admin\":false},\"html_url\":\"https://github.com/charmeee/loop-test\",\"description\":null,\"fork\":false,\"url\":\"https://api.github.com/repos/charmeee/loop-test\",\"forks_url\":\"https://api.github.com/repos/charmeee/loop-test/forks\",\"keys_url\":\"https://api.github.com/repos/charmeee/loop-test/keys{/key_id}\",\"collaborators_url\":\"https://api.github.com/repos/charmeee/loop-test/collaborators{/collaborator}\",\"teams_url\":\"https://api.github.com/repos/charmeee/loop-test/teams\",\"hooks_url\":\"https://api.github.com/repos/charmeee/loop-test/hooks\",\"issue_events_url\":\"https://api.github.com/repos/charmeee/loop-test/issues/events{/number}\",\"events_url\":\"https://api.github.com/repos/charmeee/loop-test/events\",\"assignees_url\":\"https://api.github.com/repos/charmeee/loop-test/assignees{/user}\",\"branches_url\":\"https://api.github.com/repos/charmeee/loop-test/branches{/branch}\",\"tags_url\":\"https://api.github.com/repos/charmeee/loop-test/tags\",\"blobs_url\":\"https://api.github.com/repos/charmeee/loop-test/git/blobs{/sha}\",\"git_tags_url\":\"https://api.github.com/repos/charmeee/loop-test/git/tags{/sha}\",\"git_refs_url\":\"https://api.github.com/repos/charmeee/loop-test/git/refs{/sha}\",\"trees_url\":\"https://api.github.com/repos/charmeee/loop-test/git/trees{/sha}\",\"statuses_url\":\"https://api.github.com/repos/charmeee/loop-test/statuses/{sha}\",\"languages_url\":\"https://api.github.com/repos/charmeee/loop-test/languages\",\"stargazers_url\":\"https://api.github.com/repos/charmeee/loop-test/stargazers\",\"contributors_url\":\"https://api.github.com/repos/charmeee/loop-test/contributors\",\"subscribers_url\":\"https://api.github.com/repos/charmeee/loop-test/subscribers\",\"subscription_url\":\"https://api.github.com/repos/charmeee/loop-test/subscription\",\"commits_url\":\"https://api.github.com/repos/charmeee/loop-test/commits{/sha}\",\"git_commits_url\":\"https://api.github.com/repos/charmeee/loop-test/git/commits{/sha}\",\"comments_url\":\"https://api.github.com/repos/charmeee/loop-test/comments{/number}\",\"issue_comment_url\":\"https://api.github.com/repos/charmeee/loop-test/issues/comments{/number}\",\"contents_url\":\"https://api.github.com/repos/charmeee/loop-test/contents/{+path}\",\"compare_url\":\"https://api.github.com/repos/charmeee/loop-test/compare/{base}...{head}\",\"merges_url\":\"https://api.github.com/repos/charmeee/loop-test/merges\",\"archive_url\":\"https://api.github.com/repos/charmeee/loop-test/{archive_format}{/ref}\",\"downloads_url\":\"https://api.github.com/repos/charmeee/loop-test/downloads\",\"issues_url\":\"https://api.github.com/repos/charmeee/loop-test/issues{/number}\",\"pulls_url\":\"https://api.github.com/repos/charmeee/loop-test/pulls{/number}\",\"milestones_url\":\"https://api.github.com/repos/charmeee/loop-test/milestones{/number}\",\"notifications_url\":\"https://api.github.com/repos/charmeee/loop-test/notifications{?since,all,participating}\",\"labels_url\":\"https://api.github.com/repos/charmeee/loop-test/labels{/name}\",\"releases_url\":\"https://api.github.com/repos/charmeee/loop-test/releases{/id}\",\"deployments_url\":\"https://api.github.com/repos/charmeee/loop-test/deployments\",\"created_at\":\"2026-10-06T00:12:31Z\",\"updated_at\":\"2026-10-06T01:12:07Z\",\"pushed_at\":\"2026-10-06T01:18:54Z\",\"git_url\":\"git://github.com/charmeee/loop-test.git\",\"ssh_url\":\"git@github.com:charmeee/loop-test.git\",\"clone_url\":\"https://github.com/charmeee/loop-test.git\",\"svn_url\":\"https://github.com/charmeee/loop-test\",\"homepage\":null,\"size\":0,\"stargazers_count\":0,\"watchers_count\":0,\"language\":\"JavaScript\",\"has_issues\":true,\"has_projects\":true,\"has_downloads\":false,\"has_wiki\":true,\"has_pages\":false,\"has_discussions\":false,\"forks_count\":0,\"mirror_url\":null,\"archived\":false,\"disabled\":false,\"open_issues_count\":3,\"license\":null,\"allow_forking\":true,\"is_template\":false,\"web_commit_signoff_required\":false,\"has_pull_requests\":true,\"pull_request_creation_policy\":\"all\",\"topics\":[],\"visibility\":\"public\",\"forks\":0,\"open_issues\":3,\"watchers\":0,\"default_branch\":\"main\"}},\"_links\":{\"self\":{\"href\":\"https://api.github.com/repos/charmeee/loop-test/pulls/3\"},\"html\":{\"href\":\"https://github.com/charmeee/loop-test/pull/3\"},\"issue\":{\"href\":\"https://api.github.com/repos/charmeee/loop-test/issues/3\"},\"comments\":{\"href\":\"https://api.github.com/repos/charmeee/loop-test/issues/3/comments\"},\"review_comments\":{\"href\":\"https://api.github.com/repos/charmeee/loop-test/pulls/3/comments\"},\"review_comment\":{\"href\":\"https://api.github.com/repos/charmeee/loop-test/pulls/comments{/number}\"},\"commits\":{\"href\":\"https://api.github.com/repos/charmeee/loop-test/pulls/3/commits\"},\"statuses\":{\"href\":\"https://api.github.com/repos/charmeee/loop-test/statuses/a81eae9f8905265d0a4308e677a28aa0637b7453\"}},\"author_association\":\"OWNER\",\"auto_merge\":null,\"assignee\":null,\"active_lock_reason\":null,\"merged\":false,\"mergeable\":true,\"rebaseable\":true,\"mergeable_state\":\"clean\",\"merged_by\":null,\"comments\":0,\"review_comments\":0,\"maintainer_can_modify\":false,\"commits\":3,\"additions\":24,\"deletions\":1,\"changed_files\":2}",
+      "stderr": ""
+    },
+    "ci": {
+      "args": [
+        "gh",
+        "api",
+        "repos/charmeee/loop-test/commits/a81eae9f8905265d0a4308e677a28aa0637b7453/check-runs"
+      ],
+      "code": 0,
+      "stdout": "{\"total_count\":2,\"check_runs\":[{\"id\":112060173901,\"name\":\"verify\",\"node_id\":\"CR_kwDOU9WZbc8AAAAaF06OTQ\",\"head_sha\":\"a81eae9f8905265d0a4308e677a28aa0637b7453\",\"external_id\":\"10738fe3-c309-54df-a009-47055af00f12\",\"url\":\"https://api.github.com/repos/charmeee/loop-test/check-runs/112060173901\",\"html_url\":\"https://github.com/charmeee/loop-test/actions/runs/37398531233/job/112060173901\",\"details_url\":\"https://github.com/charmeee/loop-test/actions/runs/37398531233/job/112060173901\",\"status\":\"completed\",\"conclusion\":\"success\",\"started_at\":\"2026-10-06T01:19:01Z\",\"completed_at\":\"2026-10-06T01:19:08Z\",\"output\":{\"title\":null,\"summary\":null,\"text\":null,\"annotations_count\":2,\"annotations_url\":\"https://api.github.com/repos/charmeee/loop-test/check-runs/112060173901/annotations\"},\"check_suite\":{\"id\":101300870769},\"app\":{\"id\":15368,\"client_id\":\"Iv1.05c79e9ad1f6bdfa\",\"slug\":\"github-actions\",\"node_id\":\"MDM6QXBwMTUzNjg=\",\"owner\":{\"login\":\"github\",\"id\":9919,\"node_id\":\"MDEyOk9yZ2FuaXphdGlvbjk5MTk=\",\"avatar_url\":\"https://avatars.githubusercontent.com/u/9919?v=4\",\"gravatar_id\":\"\",\"url\":\"https://api.github.com/users/github\",\"html_url\":\"https://github.com/github\",\"followers_url\":\"https://api.github.com/users/github/followers\",\"following_url\":\"https://api.github.com/users/github/following{/other_user}\",\"gists_url\":\"https://api.github.com/users/github/gists{/gist_id}\",\"starred_url\":\"https://api.github.com/users/github/starred{/owner}{/repo}\",\"subscriptions_url\":\"https://api.github.com/users/github/subscriptions\",\"organizations_url\":\"https://api.github.com/users/github/orgs\",\"repos_url\":\"https://api.github.com/users/github/repos\",\"events_url\":\"https://api.github.com/users/github/events{/privacy}\",\"received_events_url\":\"https://api.github.com/users/github/received_events\",\"type\":\"Organization\",\"user_view_type\":\"public\",\"site_admin\":false},\"name\":\"GitHub Actions\",\"description\":\"Automate your workflow from idea to production\",\"external_url\":\"https://help.github.com/en/actions\",\"html_url\":\"https://github.com/apps/github-actions\",\"created_at\":\"2018-07-30T09:30:17Z\",\"updated_at\":\"2026-06-18T16:17:48Z\",\"permissions\":{\"actions\":\"write\",\"administration\":\"read\",\"artifact_metadata\":\"write\",\"attestations\":\"write\",\"checks\":\"write\",\"code_quality\":\"write\",\"contents\":\"write\",\"copilot_requests\":\"write\",\"deployments\":\"write\",\"discussions\":\"write\",\"drives\":\"write\",\"issues\":\"write\",\"merge_queues\":\"write\",\"metadata\":\"read\",\"models\":\"read\",\"packages\":\"write\",\"pages\":\"write\",\"pull_requests\":\"write\",\"repository_hooks\":\"write\",\"repository_projects\":\"write\",\"security_events\":\"write\",\"statuses\":\"write\",\"vulnerability_alerts\":\"read\"},\"events\":[\"branch_protection_rule\",\"check_run\",\"check_suite\",\"create\",\"delete\",\"deployment\",\"deployment_status\",\"discussion\",\"discussion_comment\",\"fork\",\"gollum\",\"issues\",\"issue_comment\",\"label\",\"merge_group\",\"milestone\",\"page_build\",\"public\",\"pull_request\",\"pull_request_review\",\"pull_request_review_comment\",\"push\",\"registry_package\",\"release\",\"repository\",\"repository_dispatch\",\"status\",\"watch\",\"workflow_dispatch\",\"workflow_run\"]},\"pull_requests\":[{\"url\":\"https://api.github.com/repos/charmeee/loop-test/pulls/3\",\"id\":4752797391,\"number\":3,\"head\":{\"ref\":\"fix/money-rounding\",\"sha\":\"a81eae9f8905265d0a4308e677a28aa0637b7453\",\"repo\":{\"id\":1406507373,\"url\":\"https://api.github.com/repos/charmeee/loop-test\",\"name\":\"loop-test\"}},\"base\":{\"ref\":\"main\",\"sha\":\"1c1dd24767af399a64bfd14237ad6977cb3e0058\",\"repo\":{\"id\":1406507373,\"url\":\"https://api.github.com/repos/charmeee/loop-test\",\"name\":\"loop-test\"}}}]},{\"id\":112060164167,\"name\":\"verify\",\"node_id\":\"CR_kwDOU9WZbc8AAAAaF05oRw\",\"head_sha\":\"a81eae9f8905265d0a4308e677a28aa0637b7453\",\"external_id\":\"76f0c4be-33c4-54c4-86d1-c2cc6e357bfc\",\"url\":\"https://api.github.com/repos/charmeee/loop-test/check-runs/112060164167\",\"html_url\":\"https://github.com/charmeee/loop-test/actions/runs/37398528282/job/112060164167\",\"details_url\":\"https://github.com/charmeee/loop-test/actions/runs/37398528282/job/112060164167\",\"status\":\"completed\",\"conclusion\":\"success\",\"started_at\":\"2026-10-06T01:18:59Z\",\"completed_at\":\"2026-10-06T01:19:06Z\",\"output\":{\"title\":null,\"summary\":null,\"text\":null,\"annotations_count\":2,\"annotations_url\":\"https://api.github.com/repos/charmeee/loop-test/check-runs/112060164167/annotations\"},\"check_suite\":{\"id\":101300862999},\"app\":{\"id\":15368,\"client_id\":\"Iv1.05c79e9ad1f6bdfa\",\"slug\":\"github-actions\",\"node_id\":\"MDM6QXBwMTUzNjg=\",\"owner\":{\"login\":\"github\",\"id\":9919,\"node_id\":\"MDEyOk9yZ2FuaXphdGlvbjk5MTk=\",\"avatar_url\":\"https://avatars.githubusercontent.com/u/9919?v=4\",\"gravatar_id\":\"\",\"url\":\"https://api.github.com/users/github\",\"html_url\":\"https://github.com/github\",\"followers_url\":\"https://api.github.com/users/github/followers\",\"following_url\":\"https://api.github.com/users/github/following{/other_user}\",\"gists_url\":\"https://api.github.com/users/github/gists{/gist_id}\",\"starred_url\":\"https://api.github.com/users/github/starred{/owner}{/repo}\",\"subscriptions_url\":\"https://api.github.com/users/github/subscriptions\",\"organizations_url\":\"https://api.github.com/users/github/orgs\",\"repos_url\":\"https://api.github.com/users/github/repos\",\"events_url\":\"https://api.github.com/users/github/events{/privacy}\",\"received_events_url\":\"https://api.github.com/users/github/received_events\",\"type\":\"Organization\",\"user_view_type\":\"public\",\"site_admin\":false},\"name\":\"GitHub Actions\",\"description\":\"Automate your workflow from idea to production\",\"external_url\":\"https://help.github.com/en/actions\",\"html_url\":\"https://github.com/apps/github-actions\",\"created_at\":\"2018-07-30T09:30:17Z\",\"updated_at\":\"2026-06-18T16:17:48Z\",\"permissions\":{\"actions\":\"write\",\"administration\":\"read\",\"artifact_metadata\":\"write\",\"attestations\":\"write\",\"checks\":\"write\",\"code_quality\":\"write\",\"contents\":\"write\",\"copilot_requests\":\"write\",\"deployments\":\"write\",\"discussions\":\"write\",\"drives\":\"write\",\"issues\":\"write\",\"merge_queues\":\"write\",\"metadata\":\"read\",\"models\":\"read\",\"packages\":\"write\",\"pages\":\"write\",\"pull_requests\":\"write\",\"repository_hooks\":\"write\",\"repository_projects\":\"write\",\"security_events\":\"write\",\"statuses\":\"write\",\"vulnerability_alerts\":\"read\"},\"events\":[\"branch_protection_rule\",\"check_run\",\"check_suite\",\"create\",\"delete\",\"deployment\",\"deployment_status\",\"discussion\",\"discussion_comment\",\"fork\",\"gollum\",\"issues\",\"issue_comment\",\"label\",\"merge_group\",\"milestone\",\"page_build\",\"public\",\"pull_request\",\"pull_request_review\",\"pull_request_review_comment\",\"push\",\"registry_package\",\"release\",\"repository\",\"repository_dispatch\",\"status\",\"watch\",\"workflow_dispatch\",\"workflow_run\"]},\"pull_requests\":[{\"url\":\"https://api.github.com/repos/charmeee/loop-test/pulls/3\",\"id\":4752797391,\"number\":3,\"head\":{\"ref\":\"fix/money-rounding\",\"sha\":\"a81eae9f8905265d0a4308e677a28aa0637b7453\",\"repo\":{\"id\":1406507373,\"url\":\"https://api.github.com/repos/charmeee/loop-test\",\"name\":\"loop-test\"}},\"base\":{\"ref\":\"main\",\"sha\":\"1c1dd24767af399a64bfd14237ad6977cb3e0058\",\"repo\":{\"id\":1406507373,\"url\":\"https://api.github.com/repos/charmeee/loop-test\",\"name\":\"loop-test\"}}}]}]}",
+      "stderr": ""
+    },
+    "statuses": {
+      "args": [
+        "gh",
+        "api",
+        "repos/charmeee/loop-test/commits/a81eae9f8905265d0a4308e677a28aa0637b7453/status"
+      ],
+      "code": 0,
+      "stdout": "{\"state\":\"pending\",\"statuses\":[],\"sha\":\"a81eae9f8905265d0a4308e677a28aa0637b7453\",\"total_count\":0,\"repository\":{\"id\":1406507373,\"node_id\":\"R_kgDOU9WZbQ\",\"name\":\"loop-test\",\"full_name\":\"charmeee/loop-test\",\"private\":false,\"owner\":{\"login\":\"charmeee\",\"id\":75278669,\"node_id\":\"MDQ6VXNlcjc1Mjc4NjY5\",\"avatar_url\":\"https://avatars.githubusercontent.com/u/75278669?v=4\",\"gravatar_id\":\"\",\"url\":\"https://api.github.com/users/charmeee\",\"html_url\":\"https://github.com/charmeee\",\"followers_url\":\"https://api.github.com/users/charmeee/followers\",\"following_url\":\"https://api.github.com/users/charmeee/following{/other_user}\",\"gists_url\":\"https://api.github.com/users/charmeee/gists{/gist_id}\",\"starred_url\":\"https://api.github.com/users/charmeee/starred{/owner}{/repo}\",\"subscriptions_url\":\"https://api.github.com/users/charmeee/subscriptions\",\"organizations_url\":\"https://api.github.com/users/charmeee/orgs\",\"repos_url\":\"https://api.github.com/users/charmeee/repos\",\"events_url\":\"https://api.github.com/users/charmeee/events{/privacy}\",\"received_events_url\":\"https://api.github.com/users/charmeee/received_events\",\"type\":\"User\",\"user_view_type\":\"public\",\"site_admin\":false},\"html_url\":\"https://github.com/charmeee/loop-test\",\"description\":null,\"fork\":false,\"url\":\"https://api.github.com/repos/charmeee/loop-test\",\"forks_url\":\"https://api.github.com/repos/charmeee/loop-test/forks\",\"keys_url\":\"https://api.github.com/repos/charmeee/loop-test/keys{/key_id}\",\"collaborators_url\":\"https://api.github.com/repos/charmeee/loop-test/collaborators{/collaborator}\",\"teams_url\":\"https://api.github.com/repos/charmeee/loop-test/teams\",\"hooks_url\":\"https://api.github.com/repos/charmeee/loop-test/hooks\",\"issue_events_url\":\"https://api.github.com/repos/charmeee/loop-test/issues/events{/number}\",\"events_url\":\"https://api.github.com/repos/charmeee/loop-test/events\",\"assignees_url\":\"https://api.github.com/repos/charmeee/loop-test/assignees{/user}\",\"branches_url\":\"https://api.github.com/repos/charmeee/loop-test/branches{/branch}\",\"tags_url\":\"https://api.github.com/repos/charmeee/loop-test/tags\",\"blobs_url\":\"https://api.github.com/repos/charmeee/loop-test/git/blobs{/sha}\",\"git_tags_url\":\"https://api.github.com/repos/charmeee/loop-test/git/tags{/sha}\",\"git_refs_url\":\"https://api.github.com/repos/charmeee/loop-test/git/refs{/sha}\",\"trees_url\":\"https://api.github.com/repos/charmeee/loop-test/git/trees{/sha}\",\"statuses_url\":\"https://api.github.com/repos/charmeee/loop-test/statuses/{sha}\",\"languages_url\":\"https://api.github.com/repos/charmeee/loop-test/languages\",\"stargazers_url\":\"https://api.github.com/repos/charmeee/loop-test/stargazers\",\"contributors_url\":\"https://api.github.com/repos/charmeee/loop-test/contributors\",\"subscribers_url\":\"https://api.github.com/repos/charmeee/loop-test/subscribers\",\"subscription_url\":\"https://api.github.com/repos/charmeee/loop-test/subscription\",\"commits_url\":\"https://api.github.com/repos/charmeee/loop-test/commits{/sha}\",\"git_commits_url\":\"https://api.github.com/repos/charmeee/loop-test/git/commits{/sha}\",\"comments_url\":\"https://api.github.com/repos/charmeee/loop-test/comments{/number}\",\"issue_comment_url\":\"https://api.github.com/repos/charmeee/loop-test/issues/comments{/number}\",\"contents_url\":\"https://api.github.com/repos/charmeee/loop-test/contents/{+path}\",\"compare_url\":\"https://api.github.com/repos/charmeee/loop-test/compare/{base}...{head}\",\"merges_url\":\"https://api.github.com/repos/charmeee/loop-test/merges\",\"archive_url\":\"https://api.github.com/repos/charmeee/loop-test/{archive_format}{/ref}\",\"downloads_url\":\"https://api.github.com/repos/charmeee/loop-test/downloads\",\"issues_url\":\"https://api.github.com/repos/charmeee/loop-test/issues{/number}\",\"pulls_url\":\"https://api.github.com/repos/charmeee/loop-test/pulls{/number}\",\"milestones_url\":\"https://api.github.com/repos/charmeee/loop-test/milestones{/number}\",\"notifications_url\":\"https://api.github.com/repos/charmeee/loop-test/notifications{?since,all,participating}\",\"labels_url\":\"https://api.github.com/repos/charmeee/loop-test/labels{/name}\",\"releases_url\":\"https://api.github.com/repos/charmeee/loop-test/releases{/id}\",\"deployments_url\":\"https://api.github.com/repos/charmeee/loop-test/deployments\"},\"commit_url\":\"https://api.github.com/repos/charmeee/loop-test/commits/a81eae9f8905265d0a4308e677a28aa0637b7453\",\"url\":\"https://api.github.com/repos/charmeee/loop-test/commits/a81eae9f8905265d0a4308e677a28aa0637b7453/status\"}",
+      "stderr": ""
+    },
+    "hashes": {
+      "tests/app.test.mjs": [
+        "fadefb8ea866d27ff3d9c9fe0c74648a120487e338c71d740b83bb774e46c056",
+        "fadefb8ea866d27ff3d9c9fe0c74648a120487e338c71d740b83bb774e46c056",
+        "fadefb8ea866d27ff3d9c9fe0c74648a120487e338c71d740b83bb774e46c056"
+      ],
+      "tests/loop.test.mjs": [
+        "5adeab2ab74153a7c21f077c03b048dc3bc6ae27366470fef614a5bb5905bb34",
+        "5adeab2ab74153a7c21f077c03b048dc3bc6ae27366470fef614a5bb5905bb34",
+        "5adeab2ab74153a7c21f077c03b048dc3bc6ae27366470fef614a5bb5905bb34"
+      ],
+      "tests/money.test.mjs": [
+        "7542f537d2b89f98feed348a85117acdee0287bb5d61fad0e7a467f1644ec345",
+        "7542f537d2b89f98feed348a85117acdee0287bb5d61fad0e7a467f1644ec345",
+        "7542f537d2b89f98feed348a85117acdee0287bb5d61fad0e7a467f1644ec345"
+      ]
+    },
+    "testsImmutable": true,
+    "gate": {
+      "args": [
+        "/Users/jeonminji/company/loop-engineer-test/node_modules/.bin/loop-gate",
+        "check",
+        "--action",
+        "auto-merge",
+        "--paths",
+        "src/money.mjs",
+        "--gate-file",
+        "/Users/jeonminji/company/loop-engineer-test/gate.yaml",
+        "--json"
+      ],
+      "code": 0,
+      "stdout": "{\n  \"allowed\": true,\n  \"trigger\": \"ok\",\n  \"reason\": \"Within policy \u2014 cleared to proceed.\",\n  \"matchedPaths\": []\n}\n",
+      "stderr": ""
+    },
+    "checks": [
+      {
+        "args": [
+          "npm",
+          "ci"
+        ],
+        "code": 0,
+        "stdout": "\nadded 12 packages, and audited 13 packages in 685ms\n\n2 packages are looking for funding\n  run `npm fund` for details\n\nfound 0 vulnerabilities\n",
+        "stderr": ""
+      },
+      {
+        "args": [
+          "npm",
+          "test"
+        ],
+        "code": 0,
+        "stdout": "\n> loop-engineer-test@1.0.0 test\n> node --test tests/*.test.mjs\n\nTAP version 13\n# Subtest: money rounds ordinary values\nok 1 - money rounds ordinary values\n  ---\n  duration_ms: 0.409917\n  ...\n# Subtest: money rejects non-finite values\nok 2 - money rejects non-finite values\n  ---\n  duration_ms: 0.192625\n  ...\n# Subtest: fresh ledger permits a report-only run\nok 3 - fresh ledger permits a report-only run\n  ---\n  duration_ms: 197.401875\n  ...\n# Subtest: repeated failure trips circuit breaker\nok 4 - repeated failure trips circuit breaker\n  ---\n  duration_ms: 37.662875\n  ...\n# Subtest: token cap trips circuit breaker\nok 5 - token cap trips circuit breaker\n  ---\n  duration_ms: 70.324833\n  ...\n# Subtest: sensitive paths require escalation\nok 6 - sensitive paths require escalation\n  ---\n  duration_ms: 193.107542\n  ...\n# Subtest: L3 policy prevents documentation auto-merge\nok 7 - L3 policy prevents documentation auto-merge\n  ---\n  duration_ms: 62.429125\n  ...\n# Subtest: non-sensitive changes can be reviewed for a manual commit\nok 8 - non-sensitive changes can be reviewed for a manual commit\n  ---\n  duration_ms: 59.034917\n  ...\n# Subtest: kill switch stops before invoking any tools\nok 9 - kill switch stops before invoking any tools\n  ---\n  duration_ms: 32.527958\n  ...\n# Subtest: L3 allows implementation repairs only\nok 10 - L3 allows implementation repairs only\n  ---\n  duration_ms: 65.540583\n  ...\n# Subtest: L3 rejects test changes\nok 11 - L3 rejects test changes\n  ---\n  duration_ms: 60.416292\n  ...\n# Subtest: rounds decimal half-cent values away from zero\nok 12 - rounds decimal half-cent values away from zero\n  ---\n  duration_ms: 0.447833\n  ...\n1..12\n# tests 12\n# suites 0\n# pass 12\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 827.07675\n",
+        "stderr": ""
+      },
+      {
+        "args": [
+          "npm",
+          "run",
+          "lint"
+        ],
+        "code": 0,
+        "stdout": "\n> loop-engineer-test@1.0.0 lint\n> node --check scripts/check.mjs && node --check scripts/sync.mjs && node --check src/money.mjs\n\n",
+        "stderr": ""
+      },
+      {
+        "args": [
+          "npm",
+          "run",
+          "loop:check"
+        ],
+        "code": 0,
+        "stdout": "\n> loop-engineer-test@1.0.0 loop:check\n> node scripts/check.mjs\n\nCONTINUE [ok] \u2014 Within limits \u2014 cleared to continue.\n\nLoop doctor \u2014 /Users/jeonminji/company/loop-l3-worktrees/money\n\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\nReady:   100/100 L3\n         Strong loop readiness \u2014 good candidate for L3 with explicit gates.\nSync:    n/a\nFiles:   state=STATE.md  LOOP.md=yes  budget=yes  run-log=yes  gate=yes\nStatus:  HEALTHY (exit 0)\n\nTop next actions:\n  1. Copy or create docs/safety.md (denylists, auto-merge policy, MCP scopes)\n  2. Add patterns/registry.yaml following the existing format\n  3. Declare allowed-tools in SKILL.md frontmatter, or document tool/MCP scopes in docs/safety.md (least privilege per role)\n\nNotes:\n  \u00b7 Could not parse loop-sync JSON output\n\nWeek one: report only. Old packages still work: loop-init, loop-audit, \u2026\nDocs: https://github.com/cobusgreyling/loop-engineering/blob/main/docs/QUICKSTART.md\n\n{\n  \"score\": 90,\n  \"level\": \"healthy\",\n  \"issues\": [\n    {\n      \"type\": \"inconsistent\",\n      \"file\": \"STATE.md \u2194 LOOP.md\",\n      \"message\": \"Low structural similarity between STATE.md and LOOP.md\",\n      \"severity\": \"warning\",\n      \"suggestion\": \"Review both files for consistency\"\n    }\n  ],\n  \"suggestions\": [\n    \"Review STATE.md and LOOP.md for consistency\"\n  ],\n  \"timestamp\": \"2026-10-06T01:21:07.117Z\"\n}\n",
+        "stderr": ""
+      }
+    ],
+    "syntax": [
+      {
+        "args": [
+          "node",
+          "--check",
+          "src/money.mjs"
+        ],
+        "code": 0,
+        "stdout": "",
+        "stderr": ""
+      }
+    ],
+    "postStatus": {
+      "args": [
+        "git",
+        "status",
+        "--porcelain"
+      ],
+      "code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    "finalRemote": "a81eae9f8905265d0a4308e677a28aa0637b7453\trefs/heads/fix/money-rounding\n"
+  },
+  "integration": {
+    "checks": [
+      {
+        "args": [
+          "npm",
+          "ci"
+        ],
+        "code": 0,
+        "stdout": "\nadded 12 packages, and audited 13 packages in 762ms\n\n2 packages are looking for funding\n  run `npm fund` for details\n\nfound 0 vulnerabilities\n",
+        "stderr": ""
+      },
+      {
+        "args": [
+          "npm",
+          "test"
+        ],
+        "code": 0,
+        "stdout": "\n> loop-engineer-test@1.0.0 test\n> node --test tests/*.test.mjs\n\nTAP version 13\n# Subtest: money rounds ordinary values\nok 1 - money rounds ordinary values\n  ---\n  duration_ms: 0.417709\n  ...\n# Subtest: money rejects non-finite values\nok 2 - money rejects non-finite values\n  ---\n  duration_ms: 0.194041\n  ...\n# Subtest: discount computes total\nok 3 - discount computes total\n  ---\n  duration_ms: 0.44575\n  ...\n# Subtest: discount rejects invalid inputs\nok 4 - discount rejects invalid inputs\n  ---\n  duration_ms: 0.220708\n  ...\n# Subtest: discount supports full and zero discount\nok 5 - discount supports full and zero discount\n  ---\n  duration_ms: 0.123\n  ...\n# Subtest: fresh ledger permits a report-only run\nok 6 - fresh ledger permits a report-only run\n  ---\n  duration_ms: 177.51275\n  ...\n# Subtest: repeated failure trips circuit breaker\nok 7 - repeated failure trips circuit breaker\n  ---\n  duration_ms: 35.199792\n  ...\n# Subtest: token cap trips circuit breaker\nok 8 - token cap trips circuit breaker\n  ---\n  duration_ms: 35.088666\n  ...\n# Subtest: sensitive paths require escalation\nok 9 - sensitive paths require escalation\n  ---\n  duration_ms: 205.879834\n  ...\n# Subtest: L3 policy prevents documentation auto-merge\nok 10 - L3 policy prevents documentation auto-merge\n  ---\n  duration_ms: 59.860041\n  ...\n# Subtest: non-sensitive changes can be reviewed for a manual commit\nok 11 - non-sensitive changes can be reviewed for a manual commit\n  ---\n  duration_ms: 116.727334\n  ...\n# Subtest: kill switch stops before invoking any tools\nok 12 - kill switch stops before invoking any tools\n  ---\n  duration_ms: 41.208792\n  ...\n# Subtest: L3 allows implementation repairs only\nok 13 - L3 allows implementation repairs only\n  ---\n  duration_ms: 77.532708\n  ...\n# Subtest: L3 rejects test changes\nok 14 - L3 rejects test changes\n  ---\n  duration_ms: 69.410083\n  ...\n# Subtest: rounds decimal half-cent values away from zero\nok 15 - rounds decimal half-cent values away from zero\n  ---\n  duration_ms: 0.488458\n  ...\n# Subtest: statistics calculates count total and average\nok 16 - statistics calculates count total and average\n  ---\n  duration_ms: 0.644167\n  ...\n# Subtest: statistics handles empty input\nok 17 - statistics handles empty input\n  ---\n  duration_ms: 0.0675\n  ...\n# Subtest: statistics rejects non-finite values\nok 18 - statistics rejects non-finite values\n  ---\n  duration_ms: 0.184792\n  ...\n1..18\n# tests 18\n# suites 0\n# pass 18\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 885.6065\n",
+        "stderr": ""
+      },
+      {
+        "args": [
+          "npm",
+          "run",
+          "lint"
+        ],
+        "code": 0,
+        "stdout": "\n> loop-engineer-test@1.0.0 lint\n> node --check scripts/check.mjs && node --check scripts/sync.mjs && node --check src/money.mjs\n\n",
+        "stderr": ""
+      },
+      {
+        "args": [
+          "npm",
+          "run",
+          "loop:check"
+        ],
+        "code": 0,
+        "stdout": "\n> loop-engineer-test@1.0.0 loop:check\n> node scripts/check.mjs\n\nCONTINUE [ok] \u2014 Within limits \u2014 cleared to continue.\n\nLoop doctor \u2014 /private/var/folders/2s/g85bfyj577b9k5dk9twpyhdh0000gn/T/l3-final-shy381nr/integrated\n\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\nReady:   100/100 L3\n         Strong loop readiness \u2014 good candidate for L3 with explicit gates.\nSync:    n/a\nFiles:   state=STATE.md  LOOP.md=yes  budget=yes  run-log=yes  gate=yes\nStatus:  HEALTHY (exit 0)\n\nTop next actions:\n  1. Copy or create docs/safety.md (denylists, auto-merge policy, MCP scopes)\n  2. Add patterns/registry.yaml following the existing format\n  3. Declare allowed-tools in SKILL.md frontmatter, or document tool/MCP scopes in docs/safety.md (least privilege per role)\n\nNotes:\n  \u00b7 Could not parse loop-sync JSON output\n\nWeek one: report only. Old packages still work: loop-init, loop-audit, \u2026\nDocs: https://github.com/cobusgreyling/loop-engineering/blob/main/docs/QUICKSTART.md\n\n{\n  \"score\": 90,\n  \"level\": \"healthy\",\n  \"issues\": [\n    {\n      \"type\": \"inconsistent\",\n      \"file\": \"STATE.md \u2194 LOOP.md\",\n      \"message\": \"Low structural similarity between STATE.md and LOOP.md\",\n      \"severity\": \"warning\",\n      \"suggestion\": \"Review both files for consistency\"\n    }\n  ],\n  \"suggestions\": [\n    \"Review STATE.md and LOOP.md for consistency\"\n  ],\n  \"timestamp\": \"2026-10-06T01:21:10.218Z\"\n}\n",
+        "stderr": ""
+      }
+    ]
+  },
+  "candidateProbes": {
+    "passed": true,
+    "decimalOracleCases": 2048,
+    "oracle": "Python Decimal quantize(0.01, ROUND_HALF_UP), precision 400, input Number.toString()"
+  },
+  "integratedProbes": {
+    "passed": true,
+    "decimalOracleCases": 2048,
+    "oracle": "Python Decimal quantize(0.01, ROUND_HALF_UP), precision 400, input Number.toString()"
+  }
+}

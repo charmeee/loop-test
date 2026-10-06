@@ -1,0 +1,41 @@
+[
+  {
+    "mergeCommit": {
+      "oid": "566b99d54ba92a96e83159c27f945bdfe9c90af4"
+    },
+    "mergedAt": "2026-10-06T01:22:42Z",
+    "number": 1,
+    "state": "MERGED",
+    "url": "https://github.com/charmeee/loop-test/pull/1",
+    "approvedSha": "5603b1ffce470d52d16f4bdfa7d6d0610871d50e",
+    "repairPaths": [
+      "src/discount.mjs"
+    ]
+  },
+  {
+    "mergeCommit": {
+      "oid": "8b7ab8104f860de10449ba02745296b070a4d441"
+    },
+    "mergedAt": "2026-10-06T01:22:47Z",
+    "number": 2,
+    "state": "MERGED",
+    "url": "https://github.com/charmeee/loop-test/pull/2",
+    "approvedSha": "483952dd3f3592cd21219da45dda151e58a0cb63",
+    "repairPaths": [
+      "src/statistics.mjs"
+    ]
+  },
+  {
+    "mergeCommit": {
+      "oid": "13e83a25267f1a00a1d3a06c8dc18f241df17e08"
+    },
+    "mergedAt": "2026-10-06T01:22:52Z",
+    "number": 3,
+    "state": "MERGED",
+    "url": "https://github.com/charmeee/loop-test/pull/3",
+    "approvedSha": "a81eae9f8905265d0a4308e677a28aa0637b7453",
+    "repairPaths": [
+      "src/money.mjs"
+    ]
+  }
+]

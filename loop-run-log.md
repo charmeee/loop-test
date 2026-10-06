@@ -35,3 +35,27 @@ Append one entry per run. Prune entries older than 30 days.
   "outcome": "report-only"
 }
 ```
+
+```json
+{
+  "run_id": "run_1a57e0e44eda",
+  "completed_at": "2026-10-06T01:23:19.345850+00:00",
+  "pattern": "ci-sweeper + pr-babysitter",
+  "level": "L3 bounded experiment",
+  "prs": [
+    1,
+    2,
+    3
+  ],
+  "repair_attempts": {
+    "1": 1,
+    "2": 1,
+    "3": 2
+  },
+  "checker_rejections": 1,
+  "merged_prs": 3,
+  "tokens_estimate": null,
+  "outcome": "merged",
+  "scheduler_enabled": false
+}
+```

@@ -1,0 +1,41 @@
+{
+  "candidates": [
+    {
+      "pr": 1,
+      "sha": "5603b1ffce470d52d16f4bdfa7d6d0610871d50e",
+      "verdict": "APPROVE",
+      "testsImmutable": true,
+      "ciUrls": [
+        "https://github.com/charmeee/loop-test/actions/runs/37398161808/job/112058977732",
+        "https://github.com/charmeee/loop-test/actions/runs/37398159199/job/112058968878"
+      ],
+      "testCount": 14
+    },
+    {
+      "pr": 2,
+      "sha": "483952dd3f3592cd21219da45dda151e58a0cb63",
+      "verdict": "APPROVE",
+      "testsImmutable": true,
+      "ciUrls": [
+        "https://github.com/charmeee/loop-test/actions/runs/37398164804/job/112058987269",
+        "https://github.com/charmeee/loop-test/actions/runs/37398161279/job/112058975712"
+      ],
+      "testCount": 14
+    },
+    {
+      "pr": 3,
+      "sha": "604c7816e169740f0cd17f6bbda75d86fed127a3",
+      "verdict": "REJECT",
+      "testsImmutable": true,
+      "ciUrls": [
+        "https://github.com/charmeee/loop-test/actions/runs/37398168561/job/112059000516",
+        "https://github.com/charmeee/loop-test/actions/runs/37398164103/job/112058984953"
+      ],
+      "testCount": 12
+    }
+  ],
+  "integration": {
+    "passed": true,
+    "testCount": 18
+  }
+}

@@ -4,7 +4,7 @@
 
 | Pattern | Cadence | Status | Automation prompt |
 |---------|---------|--------|-------------------|
-| Daily Triage | one finite experiment; scheduler disabled | L3 bounded PR repair | Read STATE.md, run loop-triage, update findings and run log. |
+| CI Sweeper + PR Babysitter | one finite experiment completed; scheduler disabled | L3 experiment completed | Read STATE.md, run loop-triage, update findings and run log. |
 
 ## State
 

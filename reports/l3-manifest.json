@@ -1,0 +1,74 @@
+{
+  "repo": "charmeee/loop-test",
+  "orca_run": "run_1a57e0e44eda",
+  "cases": [
+    {
+      "pr": 1,
+      "branch": "feature/discount",
+      "worktree": "/Users/jeonminji/company/loop-l3-worktrees/discount",
+      "seed_sha": "e8ddb0245bce6866cc0a5929bbc50bd3a2e6936e",
+      "test_sha256": {
+        "tests/app.test.mjs": "fadefb8ea866d27ff3d9c9fe0c74648a120487e338c71d740b83bb774e46c056",
+        "tests/discount.test.mjs": "062f2f933608122a8a28560f222bd6b647b159b0a24a02ec51ba6251582d1720",
+        "tests/loop.test.mjs": "5adeab2ab74153a7c21f077c03b048dc3bc6ae27366470fef614a5bb5905bb34"
+      }
+    },
+    {
+      "pr": 2,
+      "branch": "feature/statistics",
+      "worktree": "/Users/jeonminji/company/loop-l3-worktrees/statistics",
+      "seed_sha": "99c9931b5b2fbbd0885af8d40bdadc5dd3d4d5f0",
+      "test_sha256": {
+        "tests/app.test.mjs": "fadefb8ea866d27ff3d9c9fe0c74648a120487e338c71d740b83bb774e46c056",
+        "tests/loop.test.mjs": "5adeab2ab74153a7c21f077c03b048dc3bc6ae27366470fef614a5bb5905bb34",
+        "tests/statistics.test.mjs": "c3bf3b9aea345057b530b1f706a067f1cfdc4b5a5c61cd856673c3a9fb5f84da"
+      }
+    },
+    {
+      "pr": 3,
+      "branch": "fix/money-rounding",
+      "worktree": "/Users/jeonminji/company/loop-l3-worktrees/money",
+      "seed_sha": "5864210ef0201985d44594338efbfcc1f1c21a4f",
+      "test_sha256": {
+        "tests/app.test.mjs": "fadefb8ea866d27ff3d9c9fe0c74648a120487e338c71d740b83bb774e46c056",
+        "tests/loop.test.mjs": "5adeab2ab74153a7c21f077c03b048dc3bc6ae27366470fef614a5bb5905bb34",
+        "tests/money.test.mjs": "7542f537d2b89f98feed348a85117acdee0287bb5d61fad0e7a467f1644ec345"
+      }
+    }
+  ],
+  "maker": {
+    "task": "task_6c3a6cb24691",
+    "dispatch": "ctx_47a4f237ed24",
+    "outcome": "succeeded",
+    "terminal": "released"
+  },
+  "checker": {
+    "task": "task_43555ce2f1c4",
+    "dispatch": "ctx_d2c3095a7728",
+    "outcome": "succeeded",
+    "terminal": "released",
+    "verdicts": {
+      "1": "APPROVE",
+      "2": "APPROVE",
+      "3": "REJECT"
+    }
+  },
+  "retryMaker": {
+    "task": "task_947bc31be928",
+    "dispatch": "ctx_7deead35be7d",
+    "outcome": "succeeded",
+    "terminal": "released",
+    "sha": "a81eae9f8905265d0a4308e677a28aa0637b7453"
+  },
+  "finalChecker": {
+    "task": "task_90c45f89e199",
+    "dispatch": "ctx_ea031bc6d96e",
+    "outcome": "succeeded",
+    "terminal": "released",
+    "verdicts": {
+      "1": "APPROVE",
+      "2": "APPROVE",
+      "3": "APPROVE"
+    }
+  }
+}

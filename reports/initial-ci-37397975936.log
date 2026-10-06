@@ -2,10 +2,10 @@ verify	Run npm test	﻿2026-10-06T01:12:31.7736899Z ##[group]Run npm test
 verify	Run npm test	2026-10-06T01:12:31.7737107Z [36;1mnpm test[0m
 verify	Run npm test	2026-10-06T01:12:31.7792874Z shell: /usr/bin/bash -e {0}
 verify	Run npm test	2026-10-06T01:12:31.7793069Z ##[endgroup]
-verify	Run npm test	2026-10-06T01:12:31.8526770Z 
+verify	Run npm test	2026-10-06T01:12:31.8526770Z
 verify	Run npm test	2026-10-06T01:12:31.8527487Z > loop-engineer-test@1.0.0 test
 verify	Run npm test	2026-10-06T01:12:31.8527815Z > node --test tests/*.test.mjs
-verify	Run npm test	2026-10-06T01:12:31.8527940Z 
+verify	Run npm test	2026-10-06T01:12:31.8527940Z
 verify	Run npm test	2026-10-06T01:12:31.8914528Z TAP version 13
 verify	Run npm test	2026-10-06T01:12:31.9214148Z # Subtest: money rounds ordinary values
 verify	Run npm test	2026-10-06T01:12:31.9215531Z ok 1 - money rounds ordinary values
@@ -82,9 +82,9 @@ verify	Run npm test	2026-10-06T01:12:32.3280384Z   location: '/home/runner/work/
 verify	Run npm test	2026-10-06T01:12:32.3280833Z   failureType: 'testCodeFailure'
 verify	Run npm test	2026-10-06T01:12:32.3281108Z   error: |-
 verify	Run npm test	2026-10-06T01:12:32.3281363Z     Expected values to be strictly equal:
-verify	Run npm test	2026-10-06T01:12:32.3281584Z     
+verify	Run npm test	2026-10-06T01:12:32.3281584Z
 verify	Run npm test	2026-10-06T01:12:32.3281711Z     1 !== 1.01
-verify	Run npm test	2026-10-06T01:12:32.3281837Z     
+verify	Run npm test	2026-10-06T01:12:32.3281837Z
 verify	Run npm test	2026-10-06T01:12:32.3281962Z   code: 'ERR_ASSERTION'
 verify	Run npm test	2026-10-06T01:12:32.3282118Z   name: 'AssertionError'
 verify	Run npm test	2026-10-06T01:12:32.3282603Z   expected: 1.01

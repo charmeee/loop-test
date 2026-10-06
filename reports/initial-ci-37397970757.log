@@ -2,10 +2,10 @@ verify	Run npm test	﻿2026-10-06T01:12:26.7215991Z ##[group]Run npm test
 verify	Run npm test	2026-10-06T01:12:26.7216607Z [36;1mnpm test[0m
 verify	Run npm test	2026-10-06T01:12:26.7269073Z shell: /usr/bin/bash -e {0}
 verify	Run npm test	2026-10-06T01:12:26.7269700Z ##[endgroup]
-verify	Run npm test	2026-10-06T01:12:26.8113559Z 
+verify	Run npm test	2026-10-06T01:12:26.8113559Z
 verify	Run npm test	2026-10-06T01:12:26.8114598Z > loop-engineer-test@1.0.0 test
 verify	Run npm test	2026-10-06T01:12:26.8115899Z > node --test tests/*.test.mjs
-verify	Run npm test	2026-10-06T01:12:26.8116421Z 
+verify	Run npm test	2026-10-06T01:12:26.8116421Z
 verify	Run npm test	2026-10-06T01:12:26.8485779Z TAP version 13
 verify	Run npm test	2026-10-06T01:12:26.8744102Z # Subtest: money rounds ordinary values
 verify	Run npm test	2026-10-06T01:12:26.8754785Z ok 1 - money rounds ordinary values
@@ -89,14 +89,14 @@ verify	Run npm test	2026-10-06T01:12:27.2887431Z   failureType: 'testCodeFailure
 verify	Run npm test	2026-10-06T01:12:27.2887694Z   error: |-
 verify	Run npm test	2026-10-06T01:12:27.2887938Z     Expected values to be strictly deep-equal:
 verify	Run npm test	2026-10-06T01:12:27.2888218Z     + actual - expected
-verify	Run npm test	2026-10-06T01:12:27.2888415Z     
+verify	Run npm test	2026-10-06T01:12:27.2888415Z
 verify	Run npm test	2026-10-06T01:12:27.2888587Z       {
 verify	Run npm test	2026-10-06T01:12:27.2888767Z     +   average: NaN,
 verify	Run npm test	2026-10-06T01:12:27.2888981Z     -   average: 0,
 verify	Run npm test	2026-10-06T01:12:27.2889174Z         count: 0,
 verify	Run npm test	2026-10-06T01:12:27.2889296Z         total: 0
 verify	Run npm test	2026-10-06T01:12:27.2889420Z       }
-verify	Run npm test	2026-10-06T01:12:27.2889528Z     
+verify	Run npm test	2026-10-06T01:12:27.2889528Z
 verify	Run npm test	2026-10-06T01:12:27.2889644Z   code: 'ERR_ASSERTION'
 verify	Run npm test	2026-10-06T01:12:27.2889782Z   name: 'AssertionError'
 verify	Run npm test	2026-10-06T01:12:27.2889931Z   expected:

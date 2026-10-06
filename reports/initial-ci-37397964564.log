@@ -2,10 +2,10 @@ verify	Run npm test	﻿2026-10-06T01:12:25.3659362Z ##[group]Run npm test
 verify	Run npm test	2026-10-06T01:12:25.3659607Z [36;1mnpm test[0m
 verify	Run npm test	2026-10-06T01:12:25.3716147Z shell: /usr/bin/bash -e {0}
 verify	Run npm test	2026-10-06T01:12:25.3716387Z ##[endgroup]
-verify	Run npm test	2026-10-06T01:12:25.4649070Z 
+verify	Run npm test	2026-10-06T01:12:25.4649070Z
 verify	Run npm test	2026-10-06T01:12:25.4649530Z > loop-engineer-test@1.0.0 test
 verify	Run npm test	2026-10-06T01:12:25.4649866Z > node --test tests/*.test.mjs
-verify	Run npm test	2026-10-06T01:12:25.4650060Z 
+verify	Run npm test	2026-10-06T01:12:25.4650060Z
 verify	Run npm test	2026-10-06T01:12:25.5060444Z TAP version 13
 verify	Run npm test	2026-10-06T01:12:25.5461250Z # Subtest: money rounds ordinary values
 verify	Run npm test	2026-10-06T01:12:25.5484852Z ok 1 - money rounds ordinary values

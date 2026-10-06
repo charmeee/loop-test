@@ -42,3 +42,5 @@ PR 3개 모두 독립 검증 APPROVE 및 정확한 SHA의 성공 CI 확인 후 �
 기존 loop-sync CLI JSON 반환 문제와 문서 제목 구조 경고는 남아 있으며 별도 API 검사로 보완했습니다.
 
 최종 로컬 main 검증: npm ci, npm test 20/20, npm run lint, npm run loop:check, git diff --check 모두 성공. 모든 Orca Task가 settled succeeded이고 작업자 4개 터미널은 released입니다.
+
+아카이브된 CI .log 파일의 줄 끝 공백만 정규화했습니다. 실패 내용과 타임스탬프는 보존했습니다.
